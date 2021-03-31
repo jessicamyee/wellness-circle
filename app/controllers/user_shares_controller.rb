@@ -1,4 +1,5 @@
 class UserSharesController < ApplicationController
+  before_action :authorize_request
   before_action :set_user_share, only: [:show, :destroy]
 
   # GET /user_share
