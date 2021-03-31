@@ -64,7 +64,7 @@ The user can also optionally share their summary data with their “inner circle
 
 
 #### Component Tree
-![Wellness Circle Component Tree](https://i.imgur.com/w3GwGUg.png)
+![Wellness Circle Component Tree](https://i.imgur.com/FesxnkI.png)
 [See here](https://whimsical.com/wellness-circle-component-tree-XM9U4Gu5gM9gS4BrVvbS5H) for a closer view of the Component Tree.
 
 #### Component Architecture
