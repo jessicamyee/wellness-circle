@@ -59,6 +59,8 @@ The user can also optionally share their summary data with their “inner circle
 
 #### Wireframes
 
+[SEE HERE](https://www.figma.com/file/Nxf7VtYomX3qQcvFyoSH9I/Wellness-Circle-Wireframes?node-id=0%3A1) for an Interactive Prototype.
+
 
 
 #### Component Tree
