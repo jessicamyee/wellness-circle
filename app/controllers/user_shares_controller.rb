@@ -5,7 +5,6 @@ class UserSharesController < ApplicationController
   # GET /user_share
   def index
     @user_share = UserShare.all
-
     render json: @user_share
   end
 
@@ -13,6 +12,7 @@ class UserSharesController < ApplicationController
 
   # GET /user_share/list
   def list
+    @user_share = UserShare.all
     render json: @user_share
   end
 

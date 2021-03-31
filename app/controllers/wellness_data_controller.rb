@@ -5,8 +5,7 @@ class WellnessDataController < ApplicationController
   # GET /wellness_data
   def index
     @wellness_data = WellnessDatum.all
-
-    render json: @wellness_data
+    render json: @wellness_data.last(21)
   end
 
   # POST /wellness_data
