@@ -60,6 +60,13 @@ The user can also optionally share their summary data with their “inner circle
 #### Wireframes
 
 [See here](https://www.figma.com/file/Nxf7VtYomX3qQcvFyoSH9I/Wellness-Circle-Wireframes?node-id=0%3A1) for an Interactive Prototype & Mobile Views.
+![Homepage Public and Authenticated View](https://i.imgur.com/xS7K3Tq.png)
+![Log In and Sign Up](https://i.imgur.com/IjF3j5a.png)
+![Dashboard and Add Record](https://i.imgur.com/i0eCW4e.png)
+![View/Edit Data](https://i.imgur.com/SxtvMym.png)
+![Inner Circle and Shared Screens](https://i.imgur.com/hElxSBH.png)
+![Mobile View Pt. 1](https://i.imgur.com/vbxJNHi.png)
+![Mobile View Pt. 2](https://i.imgur.com/lNj9Gsj.png)
 
 
 
