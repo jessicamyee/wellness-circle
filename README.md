@@ -59,13 +59,13 @@ The user can also optionally share their summary data with their “inner circle
 
 #### Wireframes
 
-[SEE HERE](https://www.figma.com/file/Nxf7VtYomX3qQcvFyoSH9I/Wellness-Circle-Wireframes?node-id=0%3A1) for an Interactive Prototype.
+[See here](https://www.figma.com/file/Nxf7VtYomX3qQcvFyoSH9I/Wellness-Circle-Wireframes?node-id=0%3A1) for an Interactive Prototype & Mobile Views.
 
 
 
 #### Component Tree
-
-
+![Wellness Circle Component Tree](https://i.imgur.com/w3GwGUg.png)
+[See here](https://whimsical.com/wellness-circle-component-tree-XM9U4Gu5gM9gS4BrVvbS5H) for a closer view of the Component Tree.
 
 #### Component Architecture
 
