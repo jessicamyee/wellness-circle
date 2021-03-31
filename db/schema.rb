@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_31_183411) do
+ActiveRecord::Schema.define(version: 2021_03_31_192619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "user_shared", force: :cascade do |t|
+  create_table "user_shares", force: :cascade do |t|
     t.bigint "sharer_id"
-    t.bigint "shared_id"
+    t.bigint "recipient_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["shared_id"], name: "index_user_shared_on_shared_id"
-    t.index ["sharer_id"], name: "index_user_shared_on_sharer_id"
+    t.index ["recipient_id"], name: "index_user_shares_on_recipient_id"
+    t.index ["sharer_id"], name: "index_user_shares_on_sharer_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2021_03_31_183411) do
     t.index ["user_id"], name: "index_wellness_data_on_user_id"
   end
 
-  add_foreign_key "user_shared", "users", column: "shared_id"
-  add_foreign_key "user_shared", "users", column: "sharer_id"
+  add_foreign_key "user_shares", "users", column: "recipient_id"
+  add_foreign_key "user_shares", "users", column: "sharer_id"
   add_foreign_key "wellness_data", "users"
 end

@@ -8,11 +8,6 @@ class WellnessDataController < ApplicationController
     render json: @wellness_data
   end
 
-  # GET /wellness_data/1
-  def show
-    render json: @wellness_datum
-  end
-
   # POST /wellness_data
   def create
     @wellness_datum = WellnessDatum.new(wellness_datum_params)
