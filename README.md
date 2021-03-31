@@ -114,11 +114,11 @@ src
 
 | Task | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| General: Set up backend (Rails), install relevant Gems, and create models/tables | H | 1hr|  |  |
-| Migrate after checking migrations | H | 0.5hr|  |  |
-| Configure user authorization | H | 2hrs|  |  |
-| Assign associations | H | 1hr|  |  |
-| View controllers to confirm how frontend is consuming backend | M | 1hr |  |  |
+| General: Set up backend (Rails), install relevant Gems, and create models/tables | H | 1hr| 2hrs | 2hrs |
+| Migrate after checking migrations | H | 0.5hr| 0.5hr | 0.5hr |
+| Configure user authorization | H | 2hrs| 0.5hr | 0.5hr |
+| Assign associations | H | 1hr| 1hr | 1hr |
+| View controllers to confirm how frontend is consuming backend | M | 1hr | 0.5hr | 0.5hr |
 | Set up seeds file and run it | H | 1hr |  |  |
 | General: Set up React app and install relevant tools | H | 0.5hr|  |  |
 | General: Clean up App.js and set up directory structure | H | 0.5hr|  |  |
