@@ -101,7 +101,7 @@ src
 ### Server (Back End)
 
 #### ERD Model
-
+![Wellness Circle ERD Model](https://i.imgur.com/oHSKCA9.png)
 
 <br>
 
