@@ -90,7 +90,6 @@ src
       |__ SignOut.jsx
       |__ Dashboard.jsx
       |__ WellDataCreate.jsx
-      |__ WellDetail.jsx
       |__ WellDataEdit.jsx
       |__ InnerCircle.jsx
       |__ SharedSettings.jsx
@@ -114,7 +113,6 @@ src
 | Assign associations | H | 1hr|  |  |
 | View controllers to confirm how frontend is consuming backend | M | 1hr |  |  |
 | Set up seeds file and run it | H | 1hr |  |  |
-| Debugging backend setup | H | 2hrs |  |  |
 | General: Set up React app and install relevant tools | H | 0.5hr|  |  |
 | General: Clean up App.js and set up directory structure | H | 0.5hr|  |  |
 | Work on services directory | H | 1hr|  |  |
@@ -123,14 +121,10 @@ src
 | Code out Login, Sign Up, SignOut and verify  | H | 3hrs|  |  |
 | GET request: Code out Dashboard.jsx  | H | 4hrs|  |  |
 | GET request: Code out WellDetail.jsx  | H | 2hrs|  |  |
-| QA-ing and debugging for App.js and component files thus far | H | 2hrs|  |  |
 | POST request: Set up the form for WellDataCreate.jsx | H | 2hrs|  |  |
-| QA-ing and debugging for POST request | H | 2hrs|  |  |
 | PUT request: Set up WellDataEdit.jsx | H | 2hrs|  |  |
-| QA-ing and debugging for PUT request | H | 2hrs|  |  |
 | GET request: Code out for InnerCircle.jsx | H | 4hrs|  |  |
-| QA-ing and debugging for InnerCircle | H | 2hrs|  |  |
-| Code SharedSettings.jsx | H | 4hrs|  |  |
+| Code SharedSettings.jsx | H | 2hrs|  |  |
 | Text decoration Pt 1: font style, font size, font colors | M | 3hrs|  |  |
 | Text decoration Pt 2: font style, font size, font colors | M | 3hrs|  |  |
 | Using Flexbox/GRID Pt 1: Elements resizing and alignment | H | 4hrs|  |  |
@@ -138,7 +132,7 @@ src
 | Implementing responsive design Pt 1 | H | 4hrs |  |  |
 | Implementing responsive design Pt 2 | H | 4hrs |  |  |
 | Final webapp QA | H | 1hr|  |  |
-| Total | H | 66hrs | |  |
+| Total | H | 54hrs | |  |
 
 
 <br>
