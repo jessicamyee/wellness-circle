@@ -119,10 +119,10 @@ src
 | Configure user authorization | H | 2hrs| 0.5hr | 0.5hr |
 | Assign associations | H | 1hr| 1hr | 1hr |
 | View controllers to confirm how frontend is consuming backend | M | 1hr | 0.5hr | 0.5hr |
-| Set up seeds file and run it | H | 1hr |  |  |
-| General: Set up React app and install relevant tools | H | 0.5hr|  |  |
-| General: Clean up App.js and set up directory structure | H | 0.5hr|  |  |
-| Work on services directory | H | 1hr|  |  |
+| Set up seeds file and run it | H | 1hr | 0.25hr | 0.25hr |
+| General: Set up React app and install relevant tools | H | 0.5hr| 0.25hr | 0.25hr |
+| General: Clean up App.js and set up directory structure | H | 0.5hr| 0.25hr | 0.25hr |
+| Work on services directory | H | 1hr| 0.5hr | 0.5hr |
 | Code out primary structure of App.js (setting up Routes) | H | 1hr |  |  |
 | Code out Nav.jsx, Footer,jsx, Home.jsx  | H | 2.5hrs |  |  |
 | Code out Login, Sign Up, SignOut and verify  | H | 3hrs|  |  |
