@@ -137,8 +137,8 @@ src
 | Using Flexbox/GRID Pt 2: Elements resizing and alignment | H | 4hrs|  |  |
 | Implementing responsive design Pt 1 | H | 4hrs |  |  |
 | Implementing responsive design Pt 2 | H | 4hrs |  |  |
-| Final webapp QA | H | 1hr| 1hr | 1hr |
-| Total | H |34.5hrs | 30.34hrs | 30.34hrs |
+| Final webapp QA | H | 1hr|  |  |
+| Total | H | 66hrs | |  |
 
 
 <br>
