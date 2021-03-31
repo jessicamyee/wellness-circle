@@ -69,19 +69,36 @@ The user can also optionally share their summary data with their “inner circle
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Modal.jsx
+      |__ ProcessCard.jsx
+      |__ DataCircle.jsx
+      |__ HistoryRow.jsx
+|__ containers/
+      |__ MainContainer.jsx
+|__ layouts/
+      |__ Layout.jsx
+|__ screens/
+      |__ Home.jsx
+      |__ SignUp.jsx
+      |__ Login.jsx
+      |__ SignOut.jsx
+      |__ Dashboard.jsx
+      |__ WellDataCreate.jsx
+      |__ WellDetail.jsx
+      |__ WellDataEdit.jsx
+      |__ InnerCircle.jsx
+      |__ SharedSettings.jsx
 |__ services/
+      |__ api-config.js
+      |__ auth.js
+      |__ wellness-data.js
+      |__ user-shared.js
+      
+     
 
 ```
 
