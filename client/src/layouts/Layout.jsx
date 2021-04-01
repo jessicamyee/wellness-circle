@@ -17,14 +17,15 @@ export default function Layout(props) {
             <Link to='/login'>Login/Sign Up</Link>
         }
       </header>
-      <hr />
-      {/* {currentUser && (
+      
+      {currentUser && (
         <>
-          <Link to='/foods'>Foods</Link>
-          <Link to='/flavors'>Flavors</Link>
+          <Link to='/wellness_data/new'>Record Today</Link>
+          <Link to='/wellness_data'>Dashboard</Link>
+          
           <hr />
         </>
-      )} */}
+      )}
 
       {currentUser && (
         <>
