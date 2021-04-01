@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Dashboard from "../screens/Dashboard";
 import WellDataCreate from "../screens/WellDataCreate";
+import WellDataViewEdit from "../screens/WellDataViewEdit";
 
-import { getAllWellnessData, postWellnessData } from "../services/wellness-data";
+import { getAllWellnessData, postWellnessData, putWellnessData } from "../services/wellness-data";
 
 
 
@@ -28,10 +29,23 @@ export default function MainContainer(props) {
     history.push('/wellness_data');
   }
 
+  const handleUpdate = async (id, wellnessInput) => {
+    const updatedWellnessData = await putWellnessData(id, wellnessInput);
+    setWellnessData(prevState => prevState.map(wellnessDatum => {
+      return wellnessDatum.id === Number(id) ? updatedWellnessData : wellnessDatum
+    }))
+    history.push('/wellness_data');
+  }
+
   return (
     <Switch>
       <Route path="/wellness_data/new">
         <WellDataCreate handleCreate={handleCreate}/>
+      </Route>
+      <Route path="/wellness_data/:id/edit">
+        <WellDataViewEdit
+          wellnessData={wellnessData}
+          handleUpdate={handleUpdate}/>
       </Route>
       <Route path="/wellness_data">
         <Dashboard wellnessData={wellnessData} />

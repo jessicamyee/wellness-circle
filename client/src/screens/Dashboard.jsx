@@ -13,7 +13,7 @@ export default function Dashboard(props) {
       {wellnessData.map((wellnessRecord) => (
         <p key={wellnessRecord.id}>
           {wellnessRecord.createdAt}
-          <button>View / Edit</button>
+          <Link to={`/wellness_data/${wellnessRecord.id}/edit`}><button>View / Edit</button></Link>
           <button>Delete</button>
         </p>
       ))}

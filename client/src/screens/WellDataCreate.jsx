@@ -9,7 +9,6 @@ export default function WellDataCreate(props) {
     intellectual_score: "",
     occupational_score: "",
     spiritual_score: "",
-    // user_id: currentUser.id,
   });
 
   const {

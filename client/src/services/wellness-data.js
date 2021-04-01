@@ -11,7 +11,7 @@ export const postWellnessData = async (wellnessInput) => {
 }
 
 export const putWellnessData = async (id, wellnessInput) => {
-  const resp = await api.put(`/wellness_data/${id}`, { wellnessData: wellnessInput })
+  const resp = await api.put(`/wellness_data/${id}`, { wellness_datum: wellnessInput })
   return resp.data
 }
 

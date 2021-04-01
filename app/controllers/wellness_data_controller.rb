@@ -7,6 +7,7 @@ class WellnessDataController < ApplicationController
     data = @current_user.wellness_data.last(21)
     render_data = data.map do |datum| 
       {
+        id: datum.id,
         socialScore: datum.social_score,
         physicalScore: datum.physical_score,
         emotionalScore: datum.emotional_score,
@@ -48,11 +49,32 @@ class WellnessDataController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_wellness_datum
-      @wellness_datum = WellnessDatum.find(params[:id])
+      @wellness_datum = @current_user.wellness_data.find(params[:id])
     end
+    
 
     # Only allow a list of trusted parameters through.
     def wellness_datum_params
-      params.require(:wellness_datum).permit(:social_score, :physical_score, :emotional_score, :intellectual_score, :occupational_score, :spiritual_score, :user_id)
+      params.require(:wellness_datum).permit(
+        :social_score,
+        :physical_score,
+        :emotional_score,
+        :intellectual_score,
+        :occupational_score,
+        :spiritual_score,
+        :user_id,
+      )
     end
+
+    # def put_wellness_datum_params
+    #   params.require(:wellness_datum).permit(
+    #     :socialScore,
+    #     :physicalScore,
+    #     :emotionalScore,
+    #     :intellectualScore,
+    #     :occupationalScore,
+    #     :spiritualScore,
+    #     :userId
+    #     )
+    # end
 end
