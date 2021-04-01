@@ -4,16 +4,17 @@ import Dashboard from "../screens/Dashboard";
 import WellDataCreate from "../screens/WellDataCreate";
 import WellDataViewEdit from "../screens/WellDataViewEdit";
 
-import { getAllWellnessData, postWellnessData, putWellnessData } from "../services/wellness-data";
-
-
-
-
+import {
+  destroyWellnessData,
+  getAllWellnessData,
+  postWellnessData,
+  putWellnessData,
+} from "../services/wellness-data";
 
 export default function MainContainer(props) {
   const [wellnessData, setWellnessData] = useState([]);
   const history = useHistory();
-  // const { currentUser } = props;
+  const { currentUser } = props;
 
   useEffect(() => {
     const fetchWellnessData = async () => {
@@ -25,32 +26,47 @@ export default function MainContainer(props) {
 
   const handleCreate = async (wellnessInput) => {
     const newWellnessData = await postWellnessData(wellnessInput);
-    setWellnessData(prevState => [...prevState, newWellnessData]);
-    history.push('/wellness_data');
-  }
+    setWellnessData((prevState) => [...prevState, newWellnessData]);
+    history.push("/wellness_data");
+  };
 
   const handleUpdate = async (id, wellnessInput) => {
     const updatedWellnessData = await putWellnessData(id, wellnessInput);
-    setWellnessData(prevState => prevState.map(wellnessDatum => {
-      return wellnessDatum.id === Number(id) ? updatedWellnessData : wellnessDatum
-    }))
-    history.push('/wellness_data');
-  }
+    setWellnessData((prevState) =>
+      prevState.map((wellnessDatum) => {
+        return wellnessDatum.id === Number(id)
+          ? updatedWellnessData
+          : wellnessDatum;
+      })
+    );
+    history.push("/wellness_data");
+  };
+
+  const handleDelete = async (id) => {
+    await destroyWellnessData(id);
+    setWellnessData((prevState) =>
+      prevState.filter((wellnessDatum) => wellnessDatum.id !== id)
+    );
+  };
 
   return (
     <Switch>
       <Route path="/wellness_data/new">
-        <WellDataCreate handleCreate={handleCreate}/>
+        <WellDataCreate handleCreate={handleCreate} />
       </Route>
       <Route path="/wellness_data/:id/edit">
         <WellDataViewEdit
           wellnessData={wellnessData}
-          handleUpdate={handleUpdate}/>
+          handleUpdate={handleUpdate}
+        />
       </Route>
       <Route path="/wellness_data">
-        <Dashboard wellnessData={wellnessData} />
+        <Dashboard
+          wellnessData={wellnessData}
+          handleDelete={handleDelete}
+          currentUser={currentUser}
+        />
       </Route>
-      
     </Switch>
   );
 }
