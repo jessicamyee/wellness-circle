@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+ 
 
 export default function WellDataViewEdit(props) {
 
@@ -165,7 +166,7 @@ export default function WellDataViewEdit(props) {
       </div>
       <button>Save New Edits</button>
       </form>
-      <button>Return to Dashboard</button>
+      <Link to="/wellness_data"><button>Return to Dashboard</button></Link>
     </>
   );
 }
