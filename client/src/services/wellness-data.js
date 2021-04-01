@@ -6,7 +6,7 @@ export const getAllWellnessData = async () => {
 };
 
 export const postWellnessData = async (wellnessInput) => {
-  const resp = await api.post('/wellness_data', { wellnessData: wellnessInput });
+  const resp = await api.post('/wellness_data', { wellness_datum: wellnessInput });
   return resp.data;
 }
 

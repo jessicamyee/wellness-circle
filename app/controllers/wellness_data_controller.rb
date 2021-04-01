@@ -23,7 +23,7 @@ class WellnessDataController < ApplicationController
   # POST /wellness_data
   def create
     @wellness_datum = WellnessDatum.new(wellness_datum_params)
-
+    @wellness_datum.user = @current_user
     if @wellness_datum.save
       render json: @wellness_datum, status: :created, location: @wellness_datum
     else
