@@ -35,7 +35,7 @@ function App() {
   const handleSignUp = async (formData) => {
     const userData = await registerUser(formData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/wellness_data');
   }
   
   const handleLogout = () => {
@@ -72,7 +72,7 @@ function App() {
       </Layout>
     </div>
   );
-}
+} 
 
 // function SetAuthTokenIfRefreshed() {
 //   localStorage.setItem('authToken', resp.data.token);
