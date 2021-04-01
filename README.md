@@ -123,13 +123,12 @@ src
 | General: Set up React app and install relevant tools | H | 0.5hr| 0.25hr | 0.25hr |
 | General: Clean up App.js and set up directory structure | H | 0.5hr| 0.25hr | 0.25hr |
 | Work on services directory | H | 1hr| 0.5hr | 0.5hr |
-| Code out primary structure of App.js (setting up Routes) | H | 1hr |  |  |
-| Code out Nav.jsx, Footer,jsx, Home.jsx  | H | 2.5hrs |  |  |
-| Code out Login, Sign Up, SignOut and verify  | H | 3hrs|  |  |
-| GET request: Code out Dashboard.jsx  | H | 4hrs|  |  |
-| GET request: Code out WellDetail.jsx  | H | 2hrs|  |  |
-| POST request: Set up the form for WellDataCreate.jsx | H | 2hrs|  |  |
-| PUT request: Set up WellDataEdit.jsx | H | 2hrs|  |  |
+| Code out primary structure of App.js (setting up Routes) | H | 1hr | 0.5hr | 0.5hr |
+| Code out Nav.jsx, Footer,jsx, Home.jsx  | H | 2.5hrs | 0.25 | 0.25 |
+| Code out Login, Sign Up, SignOut and verify  | H | 3hrs| 1hr | 1hr |
+| GET request: Code out Dashboard.jsx  | H | 4hrs| 2hrs | 2hrs |
+| POST request: Set up the form for WellDataCreate.jsx | H | 2hrs| 1hr | 1hr |
+| PUT request: Set up WellDataEdit.jsx | H | 2hrs| 3hrs | 3hrs |
 | GET request: Code out for InnerCircle.jsx | H | 4hrs|  |  |
 | Code SharedSettings.jsx | H | 2hrs|  |  |
 | Text decoration Pt 1: font style, font size, font colors | M | 3hrs|  |  |
@@ -139,7 +138,7 @@ src
 | Implementing responsive design Pt 1 | H | 4hrs |  |  |
 | Implementing responsive design Pt 2 | H | 4hrs |  |  |
 | Final webapp QA | H | 1hr|  |  |
-| Total | H | 54hrs | |  |
+| Total | H | 52hrs | |  |
 
 
 <br>
