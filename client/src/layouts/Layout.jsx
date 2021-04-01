@@ -28,7 +28,6 @@ export default function Layout(props) {
 
       {currentUser && (
         <>
-          <h3>Hello, does this work when logged in?</h3>
           <p>{currentUser.first_name}</p>
         </>
       )}
