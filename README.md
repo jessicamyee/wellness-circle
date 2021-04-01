@@ -126,7 +126,7 @@ src
 | Code out primary structure of App.js (setting up Routes) | H | 1hr | 0.5hr | 0.5hr |
 | Code out Nav.jsx, Footer,jsx, Home.jsx  | H | 2.5hrs | 0.25 | 0.25 |
 | Code out Login, Sign Up, SignOut and verify  | H | 3hrs| 1hr | 1hr |
-| GET request: Code out Dashboard.jsx  | H | 4hrs| 2hrs | 2hrs |
+| GET request: Code out Dashboard.jsx  | H | 4hrs| 2.25hrs | 2.25hrs |
 | POST request: Set up the form for WellDataCreate.jsx | H | 2hrs| 1hr | 1hr |
 | PUT request: Set up WellDataEdit.jsx | H | 2hrs| 3hrs | 3hrs |
 | GET request: Code out for InnerCircle.jsx | H | 4hrs|  |  |
