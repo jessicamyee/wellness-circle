@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-// import SummaryRow from "../components/SummaryRow"
+import SummaryRow from "../components/SummaryRow"
 
-export default function InnerCircle() {
+export default function InnerCircle(props) {
+  const { wellnessData } = props;
+
   return (
     <div>
       <h1>My Inner Circle</h1>
       <Link to="/user_shares/list"><button>View / Modify Your Shared Settings</button></Link>
-      {/* <SummaryRow
+      <SummaryRow
         personalAverageData={wellnessData?.personalAverageData}
-      /> */}
+      />
     </div>
   )
 }

@@ -3,12 +3,12 @@ import React from 'react'
 export default function SummaryRow({personalAverageData}) {
   return (
     <div>
-      {personalAverageData?.socialAverage}
-      {personalAverageData?.physicalAverage}
-      {personalAverageData?.emotionalAverage}
-      {personalAverageData?.intellectualAverage}
-      {personalAverageData?.occupationalAverage}
-      {personalAverageData?.spiritualAverage}
+      Social: {personalAverageData?.socialAverage} 
+      Physical: {personalAverageData?.physicalAverage} 
+      Emotional: {personalAverageData?.emotionalAverage} 
+      Intellectual: {personalAverageData?.intellectualAverage} 
+      Occupational: {personalAverageData?.occupationalAverage} 
+      Spiritual: {personalAverageData?.spiritualAverage} 
     </div>
   )
 }
