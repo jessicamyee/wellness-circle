@@ -3,6 +3,7 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import Dashboard from "../screens/Dashboard";
 import WellDataCreate from "../screens/WellDataCreate";
 import WellDataViewEdit from "../screens/WellDataViewEdit";
+import InnerCircle from "../screens/InnerCircle"
 
 import {
   destroyWellnessData,
@@ -66,6 +67,10 @@ export default function MainContainer(props) {
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
+      </Route>
+
+      <Route path="/user_share">
+        <InnerCircle />
       </Route>
     </Switch>
   );
