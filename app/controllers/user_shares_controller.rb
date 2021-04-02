@@ -15,10 +15,13 @@ class UserSharesController < ApplicationController
 
   # POST /user_shares
   def create
-    @user_share = UserShare.new(user_share_params)
-
+    params.require(:recipientUsername)
+    recipient_username = params[:recipientUsername]
+    recipient_user = User.find_by(username: recipient_username)
+    sharer_user = @current_user
+    @user_share = UserShare.new(sharer: sharer_user, recipient: recipient_user)
     if @user_share.save
-      render json: @user_share, status: :created, location: @user_share
+      render json: @user_share, status: :created
     else
       render json: @user_share.errors, status: :unprocessable_entity
     end
@@ -28,10 +31,5 @@ class UserSharesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user_share
       @user_share = UserShare.find(params[:id])
-    end
-
-    # Only allow a list of trusted parameters through.
-    def user_share_params
-      params.require(:user_share).permit(:user_id, :user_id)
     end
 end

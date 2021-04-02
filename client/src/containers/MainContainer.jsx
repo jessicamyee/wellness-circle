@@ -75,6 +75,12 @@ export default function MainContainer(props) {
     );
   };
 
+  const handleShareYourSummary = async (recipientUsername) => {
+    const newShareRecord = await postShare(recipientUsername);
+    setShareList((prevState) => [...prevState, newShareRecord]);
+    history.push("/user_shares/list");
+  };
+
   return (
     <Switch>
       <Route path="/wellness_data/new">
@@ -94,7 +100,10 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/user_shares/list">
-        <SharedSettings shareList={shareList} />
+        <SharedSettings
+          shareList={shareList}
+          handleShareYourSummary={handleShareYourSummary}
+        />
       </Route>
       <Route path="/user_shares">
         <InnerCircle allShares={allShares} />

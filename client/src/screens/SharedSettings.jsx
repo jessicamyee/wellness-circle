@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 export default function SharedSettings(props) {
-  const { shareList } = props;
+  const { shareList, handleShareYourSummary } = props;
 
   const [formData, setFormData] = useState({
     recipientUsername: "",
@@ -17,9 +17,14 @@ export default function SharedSettings(props) {
       [name]: value,
     }));
   };
-  
+
   return (
-    <div>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleShareYourSummary(formData);
+      }}
+    >
       <h1>Your Shared Settings</h1>
       <div>
         <h3>Share your summary with new people</h3>
@@ -38,9 +43,11 @@ export default function SharedSettings(props) {
       <div>
         <h3>You have shared your summary with the following people:</h3>
         {shareList?.map((sharedRecord) => (
-          <p key={sharedRecord.id}>{sharedRecord.first_name} {sharedRecord.last_name}</p>
+          <p key={sharedRecord.id}>
+            {sharedRecord.first_name} {sharedRecord.last_name}
+          </p>
         ))}
       </div>
-    </div>
+    </form>
   );
 }

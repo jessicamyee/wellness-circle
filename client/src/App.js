@@ -1,7 +1,7 @@
 // package imports
 import api from './services/api-config';
 import { useState, useEffect } from 'react';
-import { Switch, Route, useHistory, Redirect } from 'react-router-dom';
+import { Switch, Route, useHistory} from 'react-router-dom';
 
 // import styling
 import './App.css';
