@@ -4,6 +4,8 @@ import Dashboard from "../screens/Dashboard";
 import WellDataCreate from "../screens/WellDataCreate";
 import WellDataViewEdit from "../screens/WellDataViewEdit";
 import InnerCircle from "../screens/InnerCircle"
+import SharedSettings from "../screens/SharedSettings"
+
 
 import {
   destroyWellnessData,
@@ -68,7 +70,9 @@ export default function MainContainer(props) {
           currentUser={currentUser}
         />
       </Route>
-
+      <Route path="/user_share/list">
+        <SharedSettings />
+      </Route>
       <Route path="/user_share">
         <InnerCircle />
       </Route>
