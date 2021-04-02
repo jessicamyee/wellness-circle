@@ -4,21 +4,10 @@ class WellnessDataController < ApplicationController
 
   # GET /wellness_data
   def index
-    data = @current_user.wellness_data.last(21)
-    render_data = data.map do |datum| 
-      {
-        id: datum.id,
-        socialScore: datum.social_score,
-        physicalScore: datum.physical_score,
-        emotionalScore: datum.emotional_score,
-        intellectualScore: datum.intellectual_score,
-        occupationalScore: datum.occupational_score,
-        spiritualScore: datum.spiritual_score,
-        createdAt: datum.created_at,
-      }
-    end
-
-    render json: render_data
+    render json: {
+      personalAverageData: @current_user.personal_average_data,
+      historicalData: @current_user.historical_data,
+    }
   end
 
   # POST /wellness_data
