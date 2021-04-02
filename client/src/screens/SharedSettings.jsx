@@ -22,7 +22,7 @@ export default function SharedSettings(props) {
     <div>
       <h1>Your Shared Settings</h1>
       <div>
-        <p>Share your summary with new people</p>
+        <h3>Share your summary with new people</h3>
         <label>
           Person's Username:
           <input
@@ -36,7 +36,7 @@ export default function SharedSettings(props) {
       </div>
       <button>Share</button>
       <div>
-        <p>You have shared your summary with the following people:</p>
+        <h3>You have shared your summary with the following people:</h3>
         {shareList?.map((sharedRecord) => (
           <p key={sharedRecord.id}>{sharedRecord.first_name} {sharedRecord.last_name}</p>
         ))}
