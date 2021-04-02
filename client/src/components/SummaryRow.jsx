@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SummaryRow({personalAverageData}) {
+export default function SummaryRow({ personalAverageData }) {
   return (
     <div>
       Social: {personalAverageData?.socialAverage} 

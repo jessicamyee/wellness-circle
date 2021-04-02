@@ -14,7 +14,7 @@ User.destroy_all
 @first_user = User.create!(username: 'ace', first_name: 'Rory', last_name: 'Gilmore', password: 'Password')
 @second_user = User.create!(username: 'oh_hay_lorelai', first_name: 'Lorelai', last_name: 'Gilmore', password: 'Password')
 @third_user = User.create!(username: 'rich_logan', first_name: 'Logan', last_name: 'Huntzberger', password: 'Password')
-@third_user = User.create!(username: 'luke_d', first_name: 'Luke', last_name: 'Danes', password: 'Password')
+@fourth_user = User.create!(username: 'luke_d', first_name: 'Luke', last_name: 'Danes', password: 'Password')
 puts "#{User.count} users created"
 
 @wellness_record1 = WellnessDatum.create!(social_score: 3, physical_score: 2, emotional_score: 8, intellectual_score: 10, occupational_score: 8, spiritual_score: 5, user: @first_user)

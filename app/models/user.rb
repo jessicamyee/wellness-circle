@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   has_many :wellness_data
   has_many :user_shares, foreign_key: :sharer_id, class_name: "UserShare"
+  
 
   validates :username, presence: true, uniqueness: true
   validates :password, length: { minimum: 8 }
@@ -13,8 +14,17 @@ class User < ApplicationRecord
     end
   end
 
+
+  def averages_for_users_shared_with_self
+    UserShare.where(recipient: self).map do |user_share|
+      user_share.sharer.personal_average_data
+    end
+  end
+
   def personal_average_data
     {
+      id: id,
+      fullName: first_name + " " + last_name,
       socialAverage: truncated_average_for(:social_score),
       physicalAverage: truncated_average_for(:physical_score),
       emotionalAverage: truncated_average_for(:emotional_score),

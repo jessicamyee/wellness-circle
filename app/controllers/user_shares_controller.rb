@@ -4,8 +4,7 @@ class UserSharesController < ApplicationController
 
   # GET /user_shares
   def index
-    @user_share = UserShare.all
-    render json: @user_share
+    render json: @current_user.averages_for_users_shared_with_self()
   end
 
   # GET /user_shares/list

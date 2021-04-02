@@ -7,7 +7,6 @@ export default function Dashboard(props) {
   const [open, handleOpen] = useState(false)
   const { wellnessData, handleDelete } = props;
   
-
   return (
     <div>
       <h3>Summary</h3>
