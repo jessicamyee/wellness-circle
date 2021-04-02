@@ -1,12 +1,14 @@
-import React from 'react'
-import {useState} from 'react'
+import React from "react";
+import { useState } from "react";
 
-export default function SharedSettings() {
+export default function SharedSettings(props) {
+  const { shareList } = props;
+
   const [formData, setFormData] = useState({
     recipientUsername: "",
   });
 
-  const { recipientUsername} = formData;
+  const { recipientUsername } = formData;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,8 +17,7 @@ export default function SharedSettings() {
       [name]: value,
     }));
   };
-
-
+  
   return (
     <div>
       <h1>Your Shared Settings</h1>
@@ -36,7 +37,10 @@ export default function SharedSettings() {
       <button>Share</button>
       <div>
         <p>You have shared your summary with the following people:</p>
+        {shareList?.map((sharedRecord) => (
+          <p key={sharedRecord.id}>{sharedRecord.first_name} {sharedRecord.last_name}</p>
+        ))}
       </div>
     </div>
-  )
+  );
 }

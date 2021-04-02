@@ -26,4 +26,6 @@ puts "#{WellnessDatum.count} wellness records created"
 
 UserShare.create!(sharer: @first_user , recipient: @second_user)
 UserShare.create!(sharer: @first_user , recipient: @third_user)
+UserShare.create!(sharer: @second_user , recipient: @first_user)
+UserShare.create!(sharer: @third_user , recipient: @first_user)
 puts "#{UserShare.count} shared records created"

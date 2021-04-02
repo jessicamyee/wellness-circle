@@ -2,21 +2,18 @@ class UserSharesController < ApplicationController
   before_action :authorize_request
   before_action :set_user_share, only: [:show, :destroy]
 
-  # GET /user_share
+  # GET /user_shares
   def index
     @user_share = UserShare.all
     render json: @user_share
   end
 
-  # ADD THE MATH LOGIC HERE!!!!
-
-  # GET /user_share/list
+  # GET /user_shares/list
   def list
-    @user_share = UserShare.all
-    render json: @user_share
+    render json: @current_user.shared_recipients()
   end
 
-  # POST /user_share
+  # POST /user_shares
   def create
     @user_share = UserShare.new(user_share_params)
 

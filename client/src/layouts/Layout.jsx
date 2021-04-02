@@ -22,7 +22,7 @@ export default function Layout(props) {
         <>
           <Link to='/wellness_data/new'>Record Today</Link>
           <Link to='/wellness_data'>Dashboard</Link>
-          <Link to='/user_share'>My Inner Circle</Link>
+          <Link to='/user_shares'>My Inner Circle</Link>
           <hr />
         </>
       )}
