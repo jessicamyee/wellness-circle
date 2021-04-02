@@ -82,7 +82,8 @@ src
 |__ components/
       |__ Modal.jsx
       |__ ProcessCard.jsx
-      |__ DataCircle.jsx
+      |__ SummaryRow.jsx
+        |__ DataCircle.jsx
       |__ HistoryRow.jsx
       |__ Navbar.jsx
       |__ Footer.jsx
