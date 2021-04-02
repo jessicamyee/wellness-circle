@@ -1,4 +1,5 @@
 // package imports
+import api from './services/api-config';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory, Redirect } from 'react-router-dom';
 
@@ -25,6 +26,8 @@ function App() {
     }
     handleVerify();
   }, [])
+
+  SetAuthTokenIfMissing();
   
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -74,9 +77,12 @@ function App() {
   );
 } 
 
-// function SetAuthTokenIfRefreshed() {
-//   localStorage.setItem('authToken', resp.data.token);
-//   api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
-// }
+// To reset the token when refresh
+function SetAuthTokenIfMissing() {
+  const token = localStorage.getItem('authToken');
+  if (token) {
+    api.defaults.headers.common.authorization = `Bearer ${token}`
+  }
+}
 
 export default App;
