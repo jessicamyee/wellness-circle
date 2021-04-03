@@ -33,29 +33,29 @@ export default function WellDataViewEdit(props) {
   } = formData;
   
   const { id } = useParams();
-  const { wellnessData, handleUpdate } = props;
+  const { historicalWellnessList, handleUpdate } = props;
 
   // useEffect(() => {
   //   const prefillFormData = () => {
-  //     const wellnessRecord = wellnessData.find(
+  //     const wellnessRecord = historicalWellnessList.find(
   //       wellnessDatum => wellnessDatum.id === Number(id)
   //     );
   //     setFormData(wellnessRecord);
   //   };
-  //   if (wellnessData.length) {
+  //   if (historicalWellnessList.length) {
   //     prefillFormData();
   //   }
-  // }, [wellnessData, id]);
+  // }, [historicalWellnessList, id]);
 
   useEffect(() => {
     const prefillFormData = () => {
-      const wellnessRecord = wellnessData.find(wellnessDatum => wellnessDatum.id === Number(id));
+      const wellnessRecord = historicalWellnessList.find(wellnessDatum => wellnessDatum.id === Number(id));
       setFormData(wellnessRecord)
     }
-    if (wellnessData.length) {
+    if (historicalWellnessList.length) {
       prefillFormData()
     }
-  }, [wellnessData, id])
+  }, [historicalWellnessList, id])
 
 
   const handleChange = (e) => {

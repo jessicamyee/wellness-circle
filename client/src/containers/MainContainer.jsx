@@ -20,18 +20,20 @@ import {
 } from "../services/wellness-data";
 
 export default function MainContainer(props) {
-  const [wellnessData, setWellnessData] = useState([]);
+  const [historicalWellnessList, setHistoricalWellnessList] = useState([]);
+  const [userAverage, setUserAverage] = useState({});
   const [allShares, setAllShares] = useState([]);
   const [shareList, setShareList] = useState([]);
   const history = useHistory();
   const { currentUser } = props;
 
   useEffect(() => {
-    const fetchWellnessData = async () => {
+    const fetchUserWellnessData = async () => {
       const responseData = await getAllWellnessData();
-      setWellnessData(responseData);
+      setHistoricalWellnessList(responseData.historicalData);
+      setUserAverage(responseData.personalAverageData);
     };
-    fetchWellnessData();
+    fetchUserWellnessData();
   }, []);
 
   useEffect(() => {
@@ -52,13 +54,17 @@ export default function MainContainer(props) {
 
   const handleCreate = async (wellnessInput) => {
     const newWellnessData = await postWellnessData(wellnessInput);
-    setWellnessData((prevState) => [...prevState, newWellnessData]);
+    setHistoricalWellnessList((prevState) => {
+      // console.log(prevState);
+      return [...prevState, newWellnessData]
+    });
     history.push("/wellness_data");
   };
 
+
   const handleUpdate = async (id, wellnessInput) => {
     const updatedWellnessData = await putWellnessData(id, wellnessInput);
-    setWellnessData((prevState) =>
+    setHistoricalWellnessList((prevState) =>
       prevState.map((wellnessDatum) => {
         return wellnessDatum.id === Number(id)
           ? updatedWellnessData
@@ -70,7 +76,7 @@ export default function MainContainer(props) {
 
   const handleDelete = async (id) => {
     await destroyWellnessData(id);
-    setWellnessData((prevState) =>
+    setHistoricalWellnessList((prevState) =>
       prevState.filter((wellnessDatum) => wellnessDatum.id !== id)
     );
   };
@@ -88,13 +94,14 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/wellness_data/:id/edit">
         <WellDataViewEdit
-          wellnessData={wellnessData}
+          historicalWellnessList={historicalWellnessList}
           handleUpdate={handleUpdate}
         />
       </Route>
       <Route path="/wellness_data">
         <Dashboard
-          wellnessData={wellnessData}
+          historicalWellnessList={historicalWellnessList}
+          userAverage={userAverage}
           handleDelete={handleDelete}
           currentUser={currentUser}
         />
