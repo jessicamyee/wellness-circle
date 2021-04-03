@@ -36,6 +36,7 @@ export default function SignUp(props) {
         }}
       >
         <h3 id="signup-title">Sign Up</h3>
+        <p id="signup-intro">Create your free Wellness Circle Account</p>
         <label className="signup-text">
           Username:
           <input

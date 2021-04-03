@@ -17,6 +17,10 @@
   font-size: 40px
 }
 
+#signup-intro{
+  padding: 5px 0px 20px;
+}
+
 .signup-text{
   font-size: 16px;
 }
