@@ -14,7 +14,7 @@ import SignUp from './screens/SignUp';
 
 // function imports
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
-import Nav from './components/Nav';
+import Nav from './components/Nav/Nav';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
