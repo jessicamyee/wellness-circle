@@ -1,4 +1,4 @@
-.login-form-container{
+.signup-form-container{
   min-height: inherit;
   display: flex;
   align-items: center;
@@ -6,35 +6,31 @@
   background-color: #F8DCCB;
 }
 
-.login-form {
+.signup-form {
   width: 600px;
   background-color: #D1DCE1;
 }
 
-#login-title{
+#signup-title{
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 40px
 }
 
-.login-text{
+.signup-text{
   font-size: 16px;
 }
 
-.login-field{
+.signup-field{
   margin-left: 20px;
   margin-bottom: 20px;
   width: 300px
 }
 
-#login-btn{
+#signup-btn{
   padding: 5px 60px;
+  margin-bottom: 35px;
   border-radius: 10px;
   border-style: none;
   background-color: #ED9C6A;
-}
-
-#redirect-signup-from-login{
-  margin-top: 20px;
-  margin-bottom: 50px;
 }

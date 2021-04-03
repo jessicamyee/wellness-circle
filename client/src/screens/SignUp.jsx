@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../screens-css/SignUp.css";
 
 export default function SignUp(props) {
   const [formData, setFormData] = useState({
@@ -19,54 +20,61 @@ export default function SignUp(props) {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleSignUp(formData);
-      }}
-    >
-      <h3>Sign Up</h3>
-      <label>
-        Username:
-        <input
-          type="text"
-          name="username"
-          value={username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        First Name:
-        <input
-          type="text"
-          name="firstName"
-          value={firstName}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Last Name:
-        <input
-          type="text"
-          name="lastName"
-          value={lastName}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <button>Submit</button>
-    </form>
+    <div className="signup-form-container">
+      <form
+        className="signup-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSignUp(formData);
+        }}
+      >
+        <h3 id="signup-title">Sign Up</h3>
+        <label className="signup-text">
+          Username:
+          <input
+            className="signup-field"
+            type="text"
+            name="username"
+            value={username}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label className="signup-text">
+          First Name:
+          <input
+            className="signup-field"
+            type="text"
+            name="firstName"
+            value={firstName}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label className="signup-text">
+          Last Name:
+          <input
+            className="signup-field"
+            type="text"
+            name="lastName"
+            value={lastName}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label className="signup-text">
+          Password:
+          <input
+            className="signup-field"
+            type="password"
+            name="password"
+            value={password}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <button id="signup-btn">Sign Up</button>
+      </form>
+    </div>
   );
 }
