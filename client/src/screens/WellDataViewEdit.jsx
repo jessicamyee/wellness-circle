@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import Moment from "moment";
 import "../screens-css/WellDataViewEdit.css";
 
 export default function WellDataViewEdit(props) {
@@ -10,6 +11,7 @@ export default function WellDataViewEdit(props) {
     intellectualScore: "",
     occupationalScore: "",
     spiritualScore: "",
+    createdAt: "",
   });
 
   const {
@@ -19,18 +21,16 @@ export default function WellDataViewEdit(props) {
     intellectualScore,
     occupationalScore,
     spiritualScore,
+    createdAt,
   } = formData;
 
   const { id } = useParams();
   const { historicalWellnessList, handleUpdate } = props;
 
-  // const wellnessRecord = historicalWellnessList.find(wellnessDatum => wellnessDatum.id === Number(id));
-
+  
   useEffect(() => {
     const prefillFormData = () => {
-      const wellnessRecord = historicalWellnessList.find(
-        (wellnessDatum) => wellnessDatum.id === Number(id)
-      );
+      const wellnessRecord = historicalWellnessList.find(wellnessDatum => wellnessDatum.id === Number(id));
       setFormData(wellnessRecord);
     };
     if (historicalWellnessList.length) {
@@ -46,10 +46,10 @@ export default function WellDataViewEdit(props) {
     }));
   };
 
+
   return (
     <div className="edit-form-container">
-      <h3 id="edit-title">Edit INSERT DATE</h3>
-      {/* {wellnessRecord.createdAt} */}
+      <h3 id="edit-title">{Moment(createdAt).format("MMMM D, YYYY")}</h3>
       <form
         className="edit-form"
         onSubmit={(e) => {
