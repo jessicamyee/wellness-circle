@@ -14,8 +14,8 @@ class UserSharesController < ApplicationController
 
   # POST /user_shares
   def create
-    params.require(:recipientUsername)
-    recipient_username = params[:recipientUsername]
+    params.require(:recipient_username)
+    recipient_username = params[:recipient_username]
     recipient_user = User.find_by(username: recipient_username)
     sharer_user = @current_user
     @user_share = UserShare.new(sharer: sharer_user, recipient: recipient_user)
