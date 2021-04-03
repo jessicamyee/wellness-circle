@@ -1,0 +1,27 @@
+.nav-section {
+  display: flex;
+}
+
+.sticky-top {
+  position: sticky;
+  background-color: #80BDAE;
+}
+
+.nav-tabs {
+  color: #000000 !important;
+  /* border: none !important; */
+  margin-left: 30px;
+}
+
+#basic-navbar-nav {
+  flex-direction: row-reverse;
+  margin-right: 5%;
+}
+
+#basic-navbar-nav :hover {
+  transform: scale(1.1);
+}
+
+.toggle {
+  background-color: white !important;
+}

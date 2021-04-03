@@ -1,6 +1,7 @@
 
 import { Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import "./Nav.css";
 
 export default function MainNav(props) {
   const { currentUser, handleLogout } = props;
