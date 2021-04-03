@@ -1,0 +1,40 @@
+#login-title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px
+}
+
+.login-text{
+  font-size: 16px;
+}
+
+.login-field{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 300px
+}
+
+#login-btn{
+  padding: 5px 60px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #ED9C6A;
+}
+
+#redirect-signup-from-login{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.login-form-container{
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8DCCB;
+}
+
+form {
+  width: 600px;
+  background-color: #D1DCE1;
+}
