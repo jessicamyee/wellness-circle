@@ -5,8 +5,8 @@ class WellnessDataController < ApplicationController
   # GET /wellness_data
   def index
     render json: {
-      personalAverageData: @current_user.personal_average_data,
-      historicalData: @current_user.historical_data,
+      personal_average_data: @current_user.personal_average_data,
+      historical_data: @current_user.historical_data,
     }
   end
 

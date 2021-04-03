@@ -17,7 +17,7 @@ export default function MainNav(props) {
       <Nav.Link as={NavLink} to="/user_shares" className="nav-tabs">
         My Inner Circle
       </Nav.Link>
-      <Nav.Link onClick={handleLogout}>Sign Out</Nav.Link>
+      <Nav.Link onClick={handleLogout} className="nav-tabs">Sign Out</Nav.Link>
     </>
   );
 
@@ -35,7 +35,7 @@ export default function MainNav(props) {
   return (
     <Navbar className="nav-section sticky-top" expand="lg">
       <Navbar.Brand href="/" className="page-logo">
-        <h1>Wellness Circle</h1>
+        <h1 id="brand-name">Wellness Circle</h1>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">

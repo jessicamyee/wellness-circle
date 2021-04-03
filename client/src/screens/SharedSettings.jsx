@@ -44,7 +44,7 @@ export default function SharedSettings(props) {
         <h3>You have shared your summary with the following people:</h3>
         {shareList?.map((sharedRecord) => (
           <p key={sharedRecord.id}>
-            {sharedRecord.first_name} {sharedRecord.last_name}
+            {sharedRecord.firstName} {sharedRecord.lastName}
           </p>
         ))}
       </div>

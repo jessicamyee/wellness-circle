@@ -83,7 +83,6 @@ export default function MainContainer(props) {
   const handleShareYourSummary = async (recipientUsername) => {
     const newShareRecord = await postShare(recipientUsername);
     setShareList((prevState) => [...prevState, newShareRecord]);
-    history.push("/user_shares/list");
   };
 
   return (

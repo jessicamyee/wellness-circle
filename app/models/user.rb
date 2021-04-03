@@ -24,13 +24,13 @@ class User < ApplicationRecord
   def personal_average_data
     {
       id: id,
-      fullName: first_name + " " + last_name,
-      socialAverage: truncated_average_for(:social_score),
-      physicalAverage: truncated_average_for(:physical_score),
-      emotionalAverage: truncated_average_for(:emotional_score),
-      intellectualAverage: truncated_average_for(:intellectual_score),
-      occupationalAverage: truncated_average_for(:occupational_score),
-      spiritualAverage: truncated_average_for(:spiritual_score),
+      full_name: first_name + " " + last_name,
+      social_average: truncated_average_for(:social_score),
+      physical_average: truncated_average_for(:physical_score),
+      emotional_average: truncated_average_for(:emotional_score),
+      intellectual_average: truncated_average_for(:intellectual_score),
+      occupational_average: truncated_average_for(:occupational_score),
+      spiritual_average: truncated_average_for(:spiritual_score),
     }
   end
 
@@ -38,13 +38,13 @@ class User < ApplicationRecord
     wellness_data.last(21).map { |datum| 
       {
         id: datum.id,
-        socialScore: datum.social_score,
-        physicalScore: datum.physical_score,
-        emotionalScore: datum.emotional_score,
-        intellectualScore: datum.intellectual_score,
-        occupationalScore: datum.occupational_score,
-        spiritualScore: datum.spiritual_score,
-        createdAt: datum.created_at,
+        social_score: datum.social_score,
+        physical_score: datum.physical_score,
+        emotional_score: datum.emotional_score,
+        intellectual_score: datum.intellectual_score,
+        occupational_score: datum.occupational_score,
+        spiritual_score: datum.spiritual_score,
+        created_at: datum.created_at,
       }
     }.reverse
   end

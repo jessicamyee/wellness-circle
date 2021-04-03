@@ -3,8 +3,8 @@ import { useState } from "react";
 export default function SignUp(props) {
   const [formData, setFormData] = useState({
     username: "",
-    first_name: "",
-    last_name: "",
+    firstName: "",
+    lastName: "",
     password: "",
   });
   const { username, firstName, lastName, password } = formData;
@@ -40,7 +40,7 @@ export default function SignUp(props) {
         First Name:
         <input
           type="text"
-          name="first_name"
+          name="firstName"
           value={firstName}
           onChange={handleChange}
         />
@@ -50,7 +50,7 @@ export default function SignUp(props) {
         Last Name:
         <input
           type="text"
-          name="last_name"
+          name="lastName"
           value={lastName}
           onChange={handleChange}
         />

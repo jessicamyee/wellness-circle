@@ -89,10 +89,16 @@ GEM
     mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
+    multi_json (1.15.0)
     nio4r (2.5.7)
     nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    oj (3.11.3)
+    olive_branch (3.0.0)
+      multi_json
+      oj
+      rails (>= 4.0)
     pg (1.2.3)
     pry (0.14.0)
       coderay (~> 1.1)
@@ -162,6 +168,7 @@ DEPENDENCIES
   byebug
   jwt
   listen (~> 3.3)
+  olive_branch
   pg (~> 1.1)
   pry-rails
   puma (~> 5.0)

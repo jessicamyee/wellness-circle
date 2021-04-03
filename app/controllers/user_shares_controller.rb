@@ -20,7 +20,7 @@ class UserSharesController < ApplicationController
     sharer_user = @current_user
     @user_share = UserShare.new(sharer: sharer_user, recipient: recipient_user)
     if @user_share.save
-      render json: @user_share, status: :created
+      render json: @user_share.recipient, status: :created
     else
       render json: @user_share.errors, status: :unprocessable_entity
     end
