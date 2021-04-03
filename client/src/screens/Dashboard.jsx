@@ -18,7 +18,6 @@ export default function Dashboard(props) {
       {historicalWellnessList.map((wellnessRecord) => {
         return (
           <p key={wellnessRecord.id}>
-            {/* {wellnessRecord.created_at} */}
           {wellnessRecord.createdAt}
           <Link to={`/wellness_data/${wellnessRecord.id}/edit`}><button>View / Edit</button></Link>
           <button onClick={() => handleOpen(wellnessRecord.id)}>Delete</button>
