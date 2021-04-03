@@ -52,6 +52,7 @@ The user can also optionally share their summary data with their “inner circle
 | Ruby on Rails |  To create the backend  |
 |     JWT      |  To securely transmit information between parties as a JSON object for authorization/authentication purposes |
 |  Bcrypt  | To implement password hashing for auth/authentication purposes |
+|  Olive Branch  | To automatically convert inbound requests to snake case and outbound responses to camel case. |
 
 <br>
 
@@ -129,9 +130,9 @@ src
 | Code out Login, Sign Up, SignOut and verify  | H | 3hrs| 1hr | 1hr |
 | GET request: Code out Dashboard.jsx  | H | 4hrs| 3.25hrs | 3.25hrs |
 | POST request: Set up the form for WellDataCreate.jsx | H | 2hrs| 1hr | 1hr |
-| PUT request: Set up WellDataEdit.jsx | H | 2hrs| 3hrs | 3hrs |
+| PUT request: Set up WellDataEdit.jsx | H | 2hrs| 3.5hrs | 3.5hrs |
 | GET request: Code out for InnerCircle.jsx | H | 4hrs| 3.75hr | 3.75hr |
-| Code SharedSettings.jsx | H | 2hrs| 2.5hrs | 2.5hr |
+| Code SharedSettings.jsx | H | 2hrs| 3.5hrs | 3.5hr |
 | Text decoration Pt 1: font style, font size, font colors | M | 3hrs|  |  |
 | Text decoration Pt 2: font style, font size, font colors | M | 3hrs|  |  |
 | Using Flexbox/GRID Pt 1: Elements resizing and alignment | H | 4hrs|  |  |
