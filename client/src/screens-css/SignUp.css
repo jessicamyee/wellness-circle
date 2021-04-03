@@ -7,7 +7,7 @@
 }
 
 .signup-form {
-  width: 600px;
+  width: 800px;
   background-color: #D1DCE1;
 }
 
@@ -25,6 +25,17 @@
   margin-left: 20px;
   margin-bottom: 20px;
   width: 300px
+}
+
+.pwd-mismatch-msg{
+  background-color: rgba(235, 135, 135, 0.599);
+  width: 400px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 #signup-btn{

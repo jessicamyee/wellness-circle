@@ -52,6 +52,6 @@ class User < ApplicationRecord
   private
 
   def truncated_average_for(wellness_category)
-    wellness_data.where('created_at > ?', 7.days.ago).average(wellness_category).truncate(2).to_s('F')
+    wellness_data.where('created_at > ?', 7.days.ago).average(wellness_category)&.truncate(2)&.to_s('F')
   end
 end
