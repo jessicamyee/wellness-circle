@@ -6,9 +6,7 @@ import SummaryRow from "../components/SummaryRow";
 export default function Dashboard(props) {
   const [open, handleOpen] = useState(false)
   const { historicalWellnessList, userAverage, handleDelete } = props;
-  
-  
-  debugger;
+
   return (
     <div>
       <h3>Summary</h3>
@@ -17,13 +15,16 @@ export default function Dashboard(props) {
       />
       <Link to='/wellness_data/new'><button>Record Today</button></Link>
       <h3>View History</h3>
-      {historicalWellnessList.map((wellnessRecord) => (
-        <p key={wellnessRecord.id}>
+      {historicalWellnessList.map((wellnessRecord) => {
+        return (
+          <p key={wellnessRecord.id}>
+            {/* {wellnessRecord.created_at} */}
           {wellnessRecord.createdAt}
           <Link to={`/wellness_data/${wellnessRecord.id}/edit`}><button>View / Edit</button></Link>
           <button onClick={() => handleOpen(wellnessRecord.id)}>Delete</button>
-        </p>
-      ))}
+          </p>
+        )
+      })}
       {open && (
         <Modal
           open={open}

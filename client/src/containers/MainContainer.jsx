@@ -64,13 +64,13 @@ export default function MainContainer(props) {
 
   const handleUpdate = async (id, wellnessInput) => {
     const updatedWellnessData = await putWellnessData(id, wellnessInput);
-    setHistoricalWellnessList((prevState) =>
-      prevState.map((wellnessDatum) => {
+    setHistoricalWellnessList((prevState) => {
+      return prevState.map((wellnessDatum) => {
         return wellnessDatum.id === Number(id)
           ? updatedWellnessData
           : wellnessDatum;
       })
-    );
+    });
     history.push("/wellness_data");
   };
 

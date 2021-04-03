@@ -3,24 +3,13 @@ import { useParams, Link } from "react-router-dom";
  
 
 export default function WellDataViewEdit(props) {
-
-  // const [formData, setFormData] = useState({});
-  // // const {
-  // //   socialScore,
-  // //   physicalScore,
-  // //   emotionalScore,
-  // //   intellectualScore,
-  // //   occupationalScore,
-  // //   spiritualScore,
-  // // } = formData;
-
   const [formData, setFormData] = useState({
-    social_score: "",
-    physical_score: "",
-    emotional_score: "",
-    intellectual_score: "",
-    occupational_score: "",
-    spiritual_score: "",
+    socialScore: "",
+    physicalScore: "",
+    emotionalScore: "",
+    intellectualScore: "",
+    occupationalScore: "",
+    spiritualScore: "",
   });
 
   const {
@@ -34,18 +23,6 @@ export default function WellDataViewEdit(props) {
   
   const { id } = useParams();
   const { historicalWellnessList, handleUpdate } = props;
-
-  // useEffect(() => {
-  //   const prefillFormData = () => {
-  //     const wellnessRecord = historicalWellnessList.find(
-  //       wellnessDatum => wellnessDatum.id === Number(id)
-  //     );
-  //     setFormData(wellnessRecord);
-  //   };
-  //   if (historicalWellnessList.length) {
-  //     prefillFormData();
-  //   }
-  // }, [historicalWellnessList, id]);
 
   useEffect(() => {
     const prefillFormData = () => {
@@ -62,7 +39,7 @@ export default function WellDataViewEdit(props) {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: parseInt(value)
     }));
   };
     
@@ -81,7 +58,7 @@ export default function WellDataViewEdit(props) {
           <input
             type="number"
             id="number"
-            name="social_score"
+            name="socialScore"
             min="1"
             max="10"
             value={socialScore}
@@ -96,7 +73,7 @@ export default function WellDataViewEdit(props) {
           <input
             type="number"
             id="number"
-            name="physical_score"
+            name="physicalScore"
             min="1"
             max="10"
             value={physicalScore}
@@ -111,7 +88,7 @@ export default function WellDataViewEdit(props) {
           <input
             type="number"
             id="number"
-            name="emotional_score"
+            name="emotionalScore"
             min="1"
             max="10"
             value={emotionalScore}
@@ -126,7 +103,7 @@ export default function WellDataViewEdit(props) {
           <input
             type="number"
             id="number"
-            name="intellectual_score"
+            name="intellectualScore"
             min="1"
             max="10"
             value={intellectualScore}
@@ -141,7 +118,7 @@ export default function WellDataViewEdit(props) {
           <input
             type="number"
             id="number"
-            name="occupational_score"
+            name="occupationalScore"
             min="1"
             max="10"
             value={occupationalScore}
@@ -156,7 +133,7 @@ export default function WellDataViewEdit(props) {
           <input
             type="number"
             id="number"
-            name="spiritual_score"
+            name="spiritualScore"
             min="1"
             max="10"
             value={spiritualScore}
