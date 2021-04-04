@@ -13,7 +13,7 @@
 }
 
 .nav-tabs {
-  color: #000000 !important;
+  color: #FFFFFF !important;
   /* border: none !important; */
   margin-left: 30px;
 } 
@@ -23,8 +23,13 @@
   margin-right: 5%;
 }
 
-#basic-navbar-nav :hover {
+.navbar-light .navbar-nav .nav-link{
+  border: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
   transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .toggle {

@@ -46,27 +46,3 @@ export default function MainNav(props) {
     </Navbar>
   );
 }
-
-
-  // <div>
-  //   <Navbar.Brand href="/">
-  //     <h1>Wellness Circle</h1>
-  //   </Navbar.Brand>
-
-  //   {currentUser && (
-  //       <>
-  //         <Link to="/wellness_data/new">Record Today</Link>
-  //         <Link to="/wellness_data">Dashboard</Link>
-  //         <Link to="/user_shares">My Inner Circle</Link>
-  //       </>
-  //     )}
-
-  //     {!currentUser ? (
-  //       <>
-  //         <div><Link to="/login">Login</Link></div>
-  //         <div><Link to="/signup">Sign Up</Link></div>
-  //       </>
-  //     ) : (
-  //         <button onClick={handleLogout}>Sign Out</button>
-  //     )}
-  // </div>;
