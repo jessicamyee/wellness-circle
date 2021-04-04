@@ -25,7 +25,10 @@ export default function Dashboard(props) {
               <Link to={`/wellness_data/${wellnessRecord.id}/edit`}>
                 <button id="dashboard-view-btn">View / Edit</button>
               </Link>
-              <button onClick={() => setModalShowing(wellnessRecord.id)}>
+              <button
+                id="dashboard-delete-btn"
+                onClick={() => setModalShowing(wellnessRecord.id)}
+              >
                 Delete
               </button>
             </p>

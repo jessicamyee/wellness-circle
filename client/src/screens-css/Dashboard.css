@@ -14,7 +14,7 @@
 }
 
 #dashboard-view-btn{
-  padding-right: 10px;
+  padding: 10px;
   border-radius: 10px;
   border-style: none;
   background-color: #ED9C6A;
@@ -22,7 +22,7 @@
 }
 
 #dashboard-delete-btn{
-  padding-right: 10px;
+  padding: 6px 10px;
   border-radius: 10px;
   border-style: none;
   background-color: #ECA1A1;
