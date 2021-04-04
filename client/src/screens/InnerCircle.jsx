@@ -15,7 +15,7 @@ export default function InnerCircle(props) {
         {allShares.map((individualAverageData) => {
           return (
             <div key={individualAverageData.id} className="inner-circle-row">
-              {individualAverageData.fullName}
+              <div className="recipient-name">{individualAverageData.fullName}</div>
               <SummaryRow personalAverageData={individualAverageData} />
             </div>
           );

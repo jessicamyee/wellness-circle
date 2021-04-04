@@ -20,3 +20,10 @@
   padding-bottom: 90px;
 }
 
+.recipient-name{
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 30px;
+}
+
