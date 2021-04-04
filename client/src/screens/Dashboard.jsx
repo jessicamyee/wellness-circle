@@ -1,38 +1,41 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Modal from "../components/Modal";
+import Modal from "../components/Modal/Modal";
 import SummaryRow from "../components/SummaryRow";
 import Moment from "moment";
+import "../screens-css/Dashboard.css";
 
 export default function Dashboard(props) {
-  const [open, handleOpen] = useState(false);
+  const [modalShowing, setModalShowing] = useState(false);
   const { historicalWellnessList, userAverage, handleDelete } = props;
 
   return (
     <div>
-      <h3>Summary</h3>
+      <h1 className="dashboard-titles">Summary</h1>
       <SummaryRow personalAverageData={userAverage} />
       <Link to="/wellness_data/new">
-        <button>Record Today</button>
+        <button id="record-today-btn">RECORD TODAY</button>
       </Link>
-      <h3>View History</h3>
+      <h1 className="dashboard-titles">View History</h1>
       {historicalWellnessList.map((wellnessRecord) => {
         return (
-          <p key={wellnessRecord.id}>
-            {Moment(wellnessRecord.createdAt).format("MMMM D, YYYY")}
-            <Link to={`/wellness_data/${wellnessRecord.id}/edit`}>
-              <button>View / Edit</button>
-            </Link>
-            <button onClick={() => handleOpen(wellnessRecord.id)}>
-              Delete
-            </button>
-          </p>
+          <div className="history-content-section">
+            <p key={wellnessRecord.id}>
+              {Moment(wellnessRecord.createdAt).format("MMMM D, YYYY")}
+              <Link to={`/wellness_data/${wellnessRecord.id}/edit`}>
+                <button id="dashboard-view-btn">View / Edit</button>
+              </Link>
+              <button onClick={() => setModalShowing(wellnessRecord.id)}>
+                Delete
+              </button>
+            </p>
+          </div>
         );
       })}
-      {open && (
+      {modalShowing && (
         <Modal
-          open={open}
-          handleOpen={handleOpen}
+          modalShowing={modalShowing}
+          setModalShowing={setModalShowing}
           handleDelete={handleDelete}
         />
       )}

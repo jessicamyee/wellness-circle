@@ -1,0 +1,22 @@
+.manual-modal{
+  background-color: rgb(230, 224, 168);
+  padding: 20px 0px 20px;
+  width: 500px;
+}
+
+
+#delete-entry-confirm-btn{
+  padding-right: 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #00b147;
+  margin: 0px 20px 20px 20px;
+}
+
+#delete-entry-cancel-btn{
+  padding-right: 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #e67f7f;
+  margin: 0px 20px 0 20px;
+}
