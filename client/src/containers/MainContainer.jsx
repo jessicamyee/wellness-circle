@@ -56,7 +56,7 @@ export default function MainContainer(props) {
   const handleCreate = async (wellnessInput) => {
     const newWellnessData = await postWellnessData(wellnessInput);
     setHistoricalWellnessList((prevState) => {
-      return [...prevState, newWellnessData];
+      return [newWellnessData, ...prevState];
     });
     history.push("/wellness_data");
   };

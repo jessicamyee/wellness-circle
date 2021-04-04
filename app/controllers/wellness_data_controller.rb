@@ -54,16 +54,4 @@ class WellnessDataController < ApplicationController
         :user_id,
       )
     end
-
-    # def put_wellness_datum_params
-    #   params.require(:wellness_datum).permit(
-    #     :socialScore,
-    #     :physicalScore,
-    #     :emotionalScore,
-    #     :intellectualScore,
-    #     :occupationalScore,
-    #     :spiritualScore,
-    #     :userId
-    #     )
-    # end
 end
