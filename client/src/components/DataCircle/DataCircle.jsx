@@ -4,8 +4,8 @@ import "./DataCircle.css";
 export default function DataCircle({ title, content, colorClass }) {
   return (
     <div className={`data-circle-individual ${colorClass}`}>
-      <div>{title}</div>
-      <div>{content}</div>
+      <div id="circle-title">{title}</div>
+      <div id="circle-content">{content}</div>
     </div>
   );
 }

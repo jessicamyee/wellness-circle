@@ -4,7 +4,7 @@
   width: 170px;
   height: 170px;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   flex-direction: column;
 }
 
@@ -40,4 +40,14 @@ background: radial-gradient(circle, rgb(255, 255, 109) 1%,  rgb(255, 226, 151) 1
   0 12.5px 10px rgba(0, 70, 2, 0.06),
   0 41.8px 33.4px rgba(0, 70, 2, 0.086),
   0 100px 80px rgba(0, 70, 2, 0.12)
+}
+
+#circle-title{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#circle-content{
+  font-size: 40px;
+  font-weight: bold;
 }
