@@ -1,7 +1,8 @@
 import "../screens-css/Home.css";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props) {
+  const { currentUser } = props;
   return (
     <div>
       <div className="homepage-statement-container">
@@ -47,7 +48,12 @@ export default function Home() {
         </div>
       </div>
 
-      <Link to="/signup"><button id="homepage-signup-btn">SIGN UP</button></Link>
+      {!currentUser && (<Link to="/signup"> 
+          <button id="homepage-signup-btn">SIGN UP</button>
+        </Link>)
+      }
+      
+      
     </div>
   );
 }
