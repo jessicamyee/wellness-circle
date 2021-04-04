@@ -37,6 +37,13 @@
   color: white;
 }
 
+#login-btn:hover {
+  box-shadow: 5px 10px 18px #565a56;
+  width: 13vw;
+  height: 5vh;
+  transition: 0.2s ease-in-out;
+}
+
 #redirect-signup-from-login{
   margin-top: 20px;
   margin-bottom: 50px;

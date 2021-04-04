@@ -43,3 +43,10 @@
   margin: 40px 0px 40px;
   color: white;
 }
+
+#add-wellness-btn:hover {
+  box-shadow: 5px 10px 18px #565a56;
+  width: 15vw;
+  height: 6vh;
+  transition: 0.2s ease-in-out;
+}

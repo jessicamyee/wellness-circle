@@ -44,6 +44,13 @@
   color: white;
 }
 
+#edit-btn:hover {
+  box-shadow: 5px 10px 18px #565a56;
+  width: 18vw;
+  height: 6vh;
+  transition: 0.2s ease-in-out;
+}
+
 #return-btn{
   padding: 5px 60px;
   margin-bottom: 35px;
@@ -52,4 +59,11 @@
   font-weight: bold;
   color: white;
   background-color: rgba(63, 67, 70, 0.578);
+}
+
+#return-btn:hover {
+  box-shadow: 5px 10px 18px #565a56;
+  width: 20vw;
+  height: 6vh;
+  transition: 0.2s ease-in-out;
 }

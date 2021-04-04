@@ -52,3 +52,10 @@
   color: white;
 }
 
+#signup-btn:hover {
+  box-shadow: 5px 10px 18px #565a56;
+  width: 15vw;
+  height: 5vh;
+  transition: 0.2s ease-in-out;
+}
+
