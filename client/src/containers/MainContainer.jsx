@@ -54,10 +54,11 @@ export default function MainContainer(props) {
   }, []);
 
   const handleCreate = async (wellnessInput) => {
-    const newWellnessData = await postWellnessData(wellnessInput);
+    const responseData = await postWellnessData(wellnessInput);
     setHistoricalWellnessList((prevState) => {
-      return [newWellnessData, ...prevState];
+      return [responseData.wellnessDatum, ...prevState];
     });
+    setUserAverage(responseData.averageData);
     history.push("/wellness_data");
   };
 
@@ -66,18 +67,20 @@ export default function MainContainer(props) {
     setHistoricalWellnessList((prevState) => {
       return prevState.map((wellnessDatum) => {
         return wellnessDatum.id === Number(id)
-          ? updatedWellnessData
+          ? updatedWellnessData.wellnessDatum
           : wellnessDatum;
       });
     });
+    setUserAverage(updatedWellnessData.averageData);
     history.push("/wellness_data");
   };
 
   const handleDelete = async (id) => {
-    await destroyWellnessData(id);
+    const responseData = await destroyWellnessData(id);
     setHistoricalWellnessList((prevState) =>
       prevState.filter((wellnessDatum) => wellnessDatum.id !== id)
     );
+    setUserAverage(responseData);
   };
 
   const handleShareYourSummary = async (recipientUsername) => {

@@ -15,7 +15,7 @@ class WellnessDataController < ApplicationController
     @wellness_datum = WellnessDatum.new(wellness_datum_params)
     @wellness_datum.user = @current_user
     if @wellness_datum.save
-      render json: @wellness_datum, status: :created, location: @wellness_datum
+      render json: {wellness_datum: @wellness_datum, average_data: @current_user.personal_average_data}, status: :created, location: @wellness_datum
     else
       render json: @wellness_datum.errors, status: :unprocessable_entity
     end
@@ -24,7 +24,7 @@ class WellnessDataController < ApplicationController
   # PATCH/PUT /wellness_data/1
   def update
     if @wellness_datum.update(wellness_datum_params)
-      render json: @wellness_datum
+      render json: {wellness_datum: @wellness_datum, average_data: @current_user.personal_average_data}
     else
       render json: @wellness_datum.errors, status: :unprocessable_entity
     end
@@ -33,6 +33,7 @@ class WellnessDataController < ApplicationController
   # DELETE /wellness_data/1
   def destroy
     @wellness_datum.destroy
+    render json: @current_user.personal_average_data
   end
 
   private

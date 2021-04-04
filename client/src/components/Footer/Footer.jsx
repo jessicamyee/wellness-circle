@@ -11,7 +11,7 @@ export default function Footer() {
             target="_blank"
           >
             <img
-              src="https://www.iconsdb.com/icons/preview/white/linkedin-6-xxl.png"
+              src="https://i.imgur.com/3WZtamO.png"
               alt="linkedin"
               className="footer-photo"
             />
