@@ -1,4 +1,3 @@
-
 import { Navbar, Nav } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
@@ -17,7 +16,9 @@ export default function MainNav(props) {
       <Nav.Link as={NavLink} to="/user_shares" className="nav-tabs">
         My Inner Circle
       </Nav.Link>
-      <Nav.Link onClick={handleLogout} className="nav-tabs">Sign Out</Nav.Link>
+      <Nav.Link onClick={handleLogout} className="nav-tabs">
+        Sign Out
+      </Nav.Link>
     </>
   );
 
@@ -40,6 +41,7 @@ export default function MainNav(props) {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="font-weight-bold">
+          {currentUser && <div className="welcome-msg">Welcome, {currentUser.username}</div>}
           {currentUser ? authenticatedOptions : unauthenticatedOptions}
         </Nav>
       </Navbar.Collapse>

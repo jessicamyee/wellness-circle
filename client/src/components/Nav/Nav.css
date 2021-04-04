@@ -14,7 +14,6 @@
 
 .nav-tabs {
   color: #FFFFFF !important;
-  /* border: none !important; */
   margin-left: 30px;
 } 
 
@@ -34,4 +33,9 @@
 
 .toggle {
   background-color: white !important;
+}
+
+.welcome-msg{
+  color: white;
+  margin-top: 8px;
 }

@@ -11,7 +11,7 @@ export default function Dashboard(props) {
 
   return (
     <div>
-      <h1 className="dashboard-titles">Summary</h1>
+      <h1 className="dashboard-titles">7-Day Summary</h1>
       <SummaryRow personalAverageData={userAverage} />
       <Link to="/wellness_data/new">
         <button id="record-today-btn">RECORD TODAY</button>
