@@ -87,11 +87,9 @@ export default function WellDataCreate(props) {
         </div>
         <div className="hide-statement">
           <div className="guide-title">Physical Guiding Statements:</div>
-          <div>I am happy with myself.</div>
-          <div>
-            I am able to identify the situations and factors that overstress me.
-          </div>
-          <div>I am able to deal with day-to-day pressures.</div>
+          <div>I sleep well.</div>
+          <div>I am happy with my body.</div>
+          <div>I feel good about the amount of physical exercise I get.</div>
         </div>
 
         <div className="title-field">
@@ -111,9 +109,11 @@ export default function WellDataCreate(props) {
         </div>
         <div className="hide-statement">
           <div className="guide-title">Emotional Guiding Statements:</div>
-          <div>I sleep well.</div>
-          <div>I am happy with my body.</div>
-          <div>I feel good about the amount of physical exercise I get.</div>
+          <div>I am happy with myself.</div>
+          <div>
+            I am able to identify the situations and factors that overstress me.
+          </div>
+          <div>I am able to deal with day-to-day pressures.</div>
         </div>
 
         <div className="title-field">
