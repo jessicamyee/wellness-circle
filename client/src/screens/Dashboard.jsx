@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../components/Modal/Modal";
-import SummaryRow from "../components/SummaryRow";
+import SummaryRow from "../components/SummaryRow/SummaryRow";
 import Moment from "moment";
 import "../screens-css/Dashboard.css";
 

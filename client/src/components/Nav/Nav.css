@@ -4,11 +4,12 @@
 
 #brand-name{
   font-size: 30px;
+  color: white;
 }
 
 .sticky-top {
   position: sticky;
-  background-color: #80BDAE;
+  background-color: #1d9b7c;
 }
 
 .nav-tabs {

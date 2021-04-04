@@ -9,24 +9,27 @@
   font-weight: bold;
   border-radius: 10px;
   border-style: none;
-  background-color: #ED9C6A;
+  background-color: #fda254;
   margin: 40px 0px 40px;
+  color: white;
 }
 
 #dashboard-view-btn{
   padding: 10px;
   border-radius: 10px;
   border-style: none;
-  background-color: #ED9C6A;
+  background-color: #fda254;
   margin: 0px 20px 0 20px;
+  color: white;
 }
 
 #dashboard-delete-btn{
   padding: 6px 10px;
   border-radius: 10px;
   border-style: none;
-  background-color: #ECA1A1;
+  background-color: #e46868;
   margin: 0px 20px 0 20px;
+  color: white;
 }
 
 .history-content-section{

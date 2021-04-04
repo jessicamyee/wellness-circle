@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import SummaryRow from "../components/SummaryRow";
+import SummaryRow from "../components/SummaryRow/SummaryRow";
 import "../screens-css/InnerCircle.css";
 
 
