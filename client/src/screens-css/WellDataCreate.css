@@ -50,3 +50,17 @@
   height: 6vh;
   transition: 0.2s ease-in-out;
 }
+
+.hide-statement {
+  display: none;
+}
+
+.title-field:hover + .hide-statement {
+  display: block;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.guide-title{
+  margin-bottom: 20px;
+}

@@ -43,7 +43,7 @@ export default function WellDataCreate(props) {
         <h3 id="create-statement">
           From 1-10, how would you rate the following categories for today?{" "}
         </h3>
-        <div>
+        <div className="title-field">
           <label className="create-text">
             Social:
             <input
@@ -58,8 +58,19 @@ export default function WellDataCreate(props) {
             />
           </label>
         </div>
+        <div className="hide-statement">
+          <div className="guide-title">Social Guiding Statements:</div>
+          <div>
+            I feel good about the quality of communication with my
+            family/friends.
+          </div>
+          <div>
+            I feel good about the amount of time spent by myself or with others.
+          </div>
+          <div>I am able to communicate with others effectively. </div>
+        </div>
 
-        <div>
+        <div className="title-field">
           <label className="create-text">
             Physical:
             <input
@@ -74,8 +85,16 @@ export default function WellDataCreate(props) {
             />
           </label>
         </div>
+        <div className="hide-statement">
+          <div className="guide-title">Physical Guiding Statements:</div>
+          <div>I am happy with myself.</div>
+          <div>
+            I am able to identify the situations and factors that overstress me.
+          </div>
+          <div>I am able to deal with day-to-day pressures.</div>
+        </div>
 
-        <div>
+        <div className="title-field">
           <label className="create-text">
             Emotional:
             <input
@@ -90,8 +109,14 @@ export default function WellDataCreate(props) {
             />
           </label>
         </div>
+        <div className="hide-statement">
+          <div className="guide-title">Emotional Guiding Statements:</div>
+          <div>I sleep well.</div>
+          <div>I am happy with my body.</div>
+          <div>I feel good about the amount of physical exercise I get.</div>
+        </div>
 
-        <div>
+        <div className="title-field">
           <label className="create-text">
             Intellectual:
             <input
@@ -106,8 +131,14 @@ export default function WellDataCreate(props) {
             />
           </label>
         </div>
+        <div className="hide-statement">
+          <div className="guide-title">Intellectual Guiding Statements:</div>
+          <div>I am learning new things.</div>
+          <div>I pursue mentally stimulating interests.</div>
+          <div>I know how to set and reach goals and objectives.</div>
+        </div>
 
-        <div>
+        <div className="title-field">
           <label className="create-text">
             Occupational:
             <input
@@ -122,8 +153,16 @@ export default function WellDataCreate(props) {
             />
           </label>
         </div>
+        <div className="hide-statement">
+          <div className="guide-title">Occupational Guiding Statements:</div>
+          <div>I feel good about doing what I am doing daily at work.</div>
+          <div>I feel like I am learning useful things at work.</div>
+          <div>
+            I feel good about the professional opportunities available to me.
+          </div>
+        </div>
 
-        <div>
+        <div className="title-field">
           <label className="create-text">
             Spiritual:
             <input
@@ -137,6 +176,14 @@ export default function WellDataCreate(props) {
               onChange={handleChange}
             />
           </label>
+        </div>
+        <div className="hide-statement">
+          <div className="guide-title">Spiritual Guiding Statements:</div>
+          <div>I have feelings of peace.</div>
+          <div>
+            I am comfortable with my spirituality at this time in my life.
+          </div>
+          <div>I have a sense of meaning and purpose in my life.</div>
         </div>
 
         <button id="add-wellness-btn">Submit</button>
