@@ -1,6 +1,10 @@
 .homepage-statement-container{
-  padding: 40px 0px 40px;
-  background-color: azure;
+  padding: 40px 0px 200px;
+  height: 380px;
+  background-image: url("https://i.imgur.com/2BA3K2D.png");
+  /* background-image: url("https://i.imgur.com/VdqpDyt.png"); */
+  /* background-image: url("https://i.imgur.com/zjo2Y6z.png"); */
+  background-size: cover;
 }
 
 .homepage-statement:nth-child(1){
@@ -28,3 +32,51 @@
       opacity: 1;
   }
 }
+
+
+#homepage-process-title{
+  margin: 30px 0px 30px;
+}
+
+.process-card-section{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+
+.individual-process-card{
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+}
+
+#laptop{
+  height: 200px;
+}
+
+#lightbulb{
+  height: 195px;
+}
+
+#connection-img{
+  height:190px;
+}
+
+#connection-text{
+  margin-top: 9px;
+}
+
+
+#homepage-signup-btn{
+  padding: 10px 60px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #fda254;
+  margin: 40px 0px 40px;
+  color: white;
+}
+
+
