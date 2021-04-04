@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
+import Home from "../screens/Home";
 import Dashboard from "../screens/Dashboard";
 import WellDataCreate from "../screens/WellDataCreate";
 import WellDataViewEdit from "../screens/WellDataViewEdit";
@@ -55,11 +56,10 @@ export default function MainContainer(props) {
   const handleCreate = async (wellnessInput) => {
     const newWellnessData = await postWellnessData(wellnessInput);
     setHistoricalWellnessList((prevState) => {
-      return [...prevState, newWellnessData]
+      return [...prevState, newWellnessData];
     });
     history.push("/wellness_data");
   };
-
 
   const handleUpdate = async (id, wellnessInput) => {
     const updatedWellnessData = await putWellnessData(id, wellnessInput);
@@ -68,7 +68,7 @@ export default function MainContainer(props) {
         return wellnessDatum.id === Number(id)
           ? updatedWellnessData
           : wellnessDatum;
-      })
+      });
     });
     history.push("/wellness_data");
   };
@@ -112,6 +112,9 @@ export default function MainContainer(props) {
       </Route>
       <Route path="/user_shares">
         <InnerCircle allShares={allShares} />
+      </Route>
+      <Route path="/">
+        <Home />
       </Route>
     </Switch>
   );
