@@ -8,7 +8,8 @@ export default function InnerCircle(props) {
 
   return (
     <div className="inner-circle-container">
-        <h1 className="inner-circle-title">My Inner Circle</h1>
+      <h1 className="inner-circle-title">My Inner Circle</h1>
+      <h3 className="inner-circle-subtitle">(People who have shared their summary with you)</h3>
         <Link to="/user_shares/list">
           <button id="share-settings-btn">View / Modify Your Shared Settings</button>
         </Link>

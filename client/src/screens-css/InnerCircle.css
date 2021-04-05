@@ -2,6 +2,10 @@
   padding: 30px 0px 30px;
 }
 
+.inner-circle-subtitle{
+  margin-bottom: 30px;
+}
+
 #share-settings-btn{
   padding: 20px 60px;
   font-weight: bold;
@@ -44,6 +48,10 @@
 
   #share-settings-btn:hover {
     width: 60vw; 
+  }
+
+  .inner-circle-subtitle{
+    font-size: 25px;
   }
 }
 
