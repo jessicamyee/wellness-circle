@@ -50,7 +50,7 @@ export default function Home(props) {
               alt="people connecting"
             />
             <p id="connection-text">
-              STEP 4: Share & view your inner circle’s summary
+              STEP 4: Share your summary with your inner circle & view theirs
             </p>
           </div>
         </div>

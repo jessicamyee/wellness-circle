@@ -57,7 +57,7 @@
   margin-bottom: 50px;
 }
 
-.process-card-img{
+.process-card-img {
   margin-top: 15px;
 }
 
@@ -74,7 +74,7 @@
 }
 
 #connection-text {
-  margin-top: 9px;
+  margin: 9px;
 }
 
 #homepage-signup-btn {
@@ -132,5 +132,9 @@
 
   .individual-process-card {
     height: 240px;
+  }
+
+  #connection-text {
+    margin-top: 1px;
   }
 }
