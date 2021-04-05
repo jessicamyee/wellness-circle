@@ -142,7 +142,7 @@ src
 | Implementing responsive design Pt 1 | H | 4hrs | 2hrs | 2hrs |
 | Implementing responsive design Pt 2 | H | 4hrs | 0hr | 0hr |
 | Final webapp QA | H | 1hr|  |  |
-| Total | H | 52hrs | |  |
+| Total | H | 52hrs | 45.5hrs | 45.5hrs |
 
 
 <br>
