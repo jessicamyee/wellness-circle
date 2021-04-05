@@ -19,6 +19,8 @@
 
 ## Overview
 
+Deployed Link: Pending
+
 **Wellness Circle** is a personal wellness tracker where a user signs up for an account and can start tracking their daily wellness for 6 wellness categories. The user will be able to see weekly summaries of their wellness based on the data they inputted.
 
 The user can also optionally share their summary data with their “inner circle”. People in the inner circle will also need to make an account to be able to see the shared wellness summaries.
@@ -116,29 +118,29 @@ src
 
 | Task | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| General: Set up backend (Rails), install relevant Gems, and create models/tables | H | 1hr| 2hrs | 2hrs |
+| General: Set up backend (Rails), install relevant Gems, and create models/tables | H | 1hr| 2.5hrs | 2.5hrs |
 | Migrate after checking migrations | H | 0.5hr| 0.5hr | 0.5hr |
 | Configure user authorization | H | 2hrs| 0.5hr | 0.5hr |
-| Assign associations | H | 1hr| 1hr | 1hr |
+| Assign associations | H | 1hr| 1.5hr | 1.5hr |
 | View controllers to confirm how frontend is consuming backend | M | 1hr | 0.5hr | 0.5hr |
 | Set up seeds file and run it | H | 1hr | 0.25hr | 0.25hr |
 | General: Set up React app and install relevant tools | H | 0.5hr| 0.25hr | 0.25hr |
 | General: Clean up App.js and set up directory structure | H | 0.5hr| 0.25hr | 0.25hr |
 | Work on services directory | H | 1hr| 0.5hr | 0.5hr |
 | Code out primary structure of App.js (setting up Routes) | H | 1hr | 0.5hr | 0.5hr |
-| Code out Nav.jsx, Footer,jsx, Home.jsx  | H | 2.5hrs | 0.25 | 0.25 |
+| Code out Nav.jsx, Footer,jsx, Home.jsx  | H | 2.5hrs | 3.25 | 3.25 |
 | Code out Login, Sign Up, SignOut and verify  | H | 3hrs| 1hr | 1hr |
 | GET request: Code out Dashboard.jsx  | H | 4hrs| 3.25hrs | 3.25hrs |
-| POST request: Set up the form for WellDataCreate.jsx | H | 2hrs| 1hr | 1hr |
+| POST request: Set up the form for WellDataCreate.jsx | H | 2hrs| 2hr | 2hr |
 | PUT request: Set up WellDataEdit.jsx | H | 2hrs| 3.5hrs | 3.5hrs |
-| GET request: Code out for InnerCircle.jsx | H | 4hrs| 3.75hr | 3.75hr |
-| Code SharedSettings.jsx | H | 2hrs| 3.5hrs | 3.5hr |
-| Text decoration Pt 1: font style, font size, font colors | M | 3hrs|  |  |
-| Text decoration Pt 2: font style, font size, font colors | M | 3hrs|  |  |
-| Using Flexbox/GRID Pt 1: Elements resizing and alignment | H | 4hrs|  |  |
-| Using Flexbox/GRID Pt 2: Elements resizing and alignment | H | 4hrs|  |  |
-| Implementing responsive design Pt 1 | H | 4hrs |  |  |
-| Implementing responsive design Pt 2 | H | 4hrs |  |  |
+| GET request: Code out for InnerCircle.jsx | H | 4hrs| 4.75hr | 4.75hr |
+| Code SharedSettings.jsx | H | 2hrs| 4.5hrs | 4.5hr |
+| Text decoration Pt 1: font style, font size, font colors | M | 3hrs| 3hrs | 3hrs |
+| Text decoration Pt 2: font style, font size, font colors | M | 3hrs| 3hrs | 3hrs |
+| Using Flexbox/GRID Pt 1: Elements resizing and alignment | H | 4hrs| 4hrs | 4hrs |
+| Using Flexbox/GRID Pt 2: Elements resizing and alignment | H | 4hrs| 4hrs | 4hrs |
+| Implementing responsive design Pt 1 | H | 4hrs | 2hrs | 2hrs |
+| Implementing responsive design Pt 2 | H | 4hrs | 0hr | 0hr |
 | Final webapp QA | H | 1hr|  |  |
 | Total | H | 52hrs | |  |
 
