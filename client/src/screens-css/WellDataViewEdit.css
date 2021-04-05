@@ -67,3 +67,29 @@
   height: 6vh;
   transition: 0.2s ease-in-out;
 }
+
+@media only screen and (max-width: 768px) {
+  .edit-form {
+    width: 600px;
+  }
+
+  #edit-title{
+    font-size: 35px
+  }
+
+  #return-btn:hover {
+    width: 50vw;
+    height: 6vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .edit-form {
+    width: 300px;
+  }
+
+  .edit-field{
+    margin: 0 auto;
+    width: 260px;
+  }
+}
