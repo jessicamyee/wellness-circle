@@ -63,6 +63,10 @@
   .signup-form {
     width: 600px;
   }
+
+  #signup-btn:hover {
+    width: 27vw;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -79,8 +83,12 @@
   #signup-title{
     font-size: 30px;
   }
-  
+
   #signup-intro {
     margin: 2px;
+  }
+
+  #signup-btn:hover {
+    width: 50vw;
   }
 }
