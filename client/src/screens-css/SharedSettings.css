@@ -1,6 +1,5 @@
 .shared-settings-container{
   background-color: #F8DCCB;
-  /* min-height: inherit; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,4 +50,46 @@
   width: 15vw;
   height: 6vh;
   transition: 0.2s ease-in-out;
+}
+
+#share-error{
+  color: red;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .shared-box{
+    width: 600px;
+  }
+
+  .shared-settings-container{
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .shared-box{
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  #shared-settings-title{
+    font-size: 33px;
+  }
+
+  .shared-box-statement{
+    font-size: 20px;
+    text-align: left;
+    margin-left:20px;
+    margin-bottom: 50px;
+  }
+
+  .sharing-field{
+    margin: 0 auto;
+    width: 250px
+  }
+
+  #share-btn:hover {
+    width: 40vw;
+  }
 }

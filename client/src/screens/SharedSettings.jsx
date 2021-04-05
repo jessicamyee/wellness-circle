@@ -31,7 +31,7 @@ export default function SharedSettings(props) {
       >
         <div className="shared-box">
           <h3 className="shared-box-statement">
-            Share your summary with new people
+            Share your 7-day summary with new people
           </h3>
           <label className="sharing-text">
             Person's Username:
@@ -47,7 +47,7 @@ export default function SharedSettings(props) {
           <div>
             <button id="share-btn">Share</button>
           </div>
-          <div>{shareError}</div>
+          <div id="share-error">{shareError}</div>
         </div>
 
         <div className="shared-box">
