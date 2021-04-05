@@ -1,4 +1,3 @@
-import React from "react";
 import "./DataCircle.css";
 
 export default function DataCircle({ title, content, colorClass }) {

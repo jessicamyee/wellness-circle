@@ -1,12 +1,11 @@
-.manual-modal{
+.manual-modal {
   background-color: rgb(230, 224, 168);
   padding: 20px 0px 20px;
   width: 500px;
   margin: 0 auto;
 }
 
-
-#delete-entry-confirm-btn{
+#delete-entry-confirm-btn {
   padding-right: 10px;
   border-radius: 10px;
   border-style: none;
@@ -14,7 +13,7 @@
   margin: 0px 20px 20px 20px;
 }
 
-#delete-entry-cancel-btn{
+#delete-entry-cancel-btn {
   padding-right: 10px;
   border-radius: 10px;
   border-style: none;
@@ -23,14 +22,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .manual-modal{
+  .manual-modal {
     padding: 20px 10px 20px;
     width: 370px;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .manual-modal{
+  .manual-modal {
     padding: 20px 10px 20px;
     width: 280px;
   }

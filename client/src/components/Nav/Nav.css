@@ -2,7 +2,7 @@
   display: flex;
 }
 
-#brand-name{
+#brand-name {
   font-size: 30px;
   color: white;
 }
@@ -13,16 +13,16 @@
 }
 
 .nav-tabs {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   margin-left: 30px;
-} 
+}
 
 #basic-navbar-nav {
   flex-direction: row-reverse;
   margin-right: 5%;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
   border: 0;
 }
 
@@ -35,7 +35,7 @@
   background-color: white !important;
 }
 
-.welcome-msg{
+.welcome-msg {
   color: white;
   margin-top: 8px;
 }

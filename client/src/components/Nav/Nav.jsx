@@ -41,7 +41,9 @@ export default function MainNav(props) {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggle" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="font-weight-bold">
-          {currentUser && <div className="welcome-msg">Welcome, {currentUser.username}</div>}
+          {currentUser && (
+            <div className="welcome-msg">Welcome, {currentUser.username}</div>
+          )}
           {currentUser ? authenticatedOptions : unauthenticatedOptions}
         </Nav>
       </Navbar.Collapse>
