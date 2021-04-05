@@ -15,6 +15,7 @@ export default function Home(props) {
           <div className="individual-process-card">
             <img
               id="lightbulb"
+              className="process-card-img"
               src="https://i.imgur.com/FO4qcWd.png"
               alt="lightbulb"
             />
@@ -24,6 +25,7 @@ export default function Home(props) {
           <div className="individual-process-card">
             <img
               id="laptop"
+              className="process-card-img"
               src="https://i.imgur.com/EhGbmH7.png"
               alt="computer"
             />
@@ -33,6 +35,7 @@ export default function Home(props) {
           <div className="individual-process-card">
             <img
               id="bar-graph"
+              className="process-card-img"
               src="https://i.imgur.com/oM0cqkm.png"
               alt="bar graph"
             />
@@ -42,6 +45,7 @@ export default function Home(props) {
           <div className="individual-process-card">
             <img
               id="connection-img"
+              className="process-card-img"
               src="https://i.imgur.com/cIWf3Eh.png"
               alt="people connecting"
             />
