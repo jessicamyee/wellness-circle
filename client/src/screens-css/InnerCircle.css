@@ -30,3 +30,21 @@
   margin: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+  .inner-circle-row{
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #share-settings-btn{
+    padding: 20px 30px;
+    font-weight: bold;
+  }
+
+  #share-settings-btn:hover {
+    width: 60vw; 
+  }
+}
+
+
