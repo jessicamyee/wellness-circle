@@ -26,6 +26,7 @@ export default function SharedSettings(props) {
         onSubmit={(e) => {
           e.preventDefault();
           handleShareYourSummary(formData);
+          setFormData({recipientUsername: ""});
         }}
       >
         <div className="shared-box">
