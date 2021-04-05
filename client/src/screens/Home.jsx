@@ -31,7 +31,11 @@ export default function Home(props) {
           </div>
 
           <div className="individual-process-card">
-            <img src="https://i.imgur.com/oM0cqkm.png" alt="bar graph" />
+            <img
+              id="bar-graph"
+              src="https://i.imgur.com/oM0cqkm.png"
+              alt="bar graph"
+            />
             <p>STEP 3: View your 7-day summary </p>
           </div>
 
@@ -48,12 +52,11 @@ export default function Home(props) {
         </div>
       </div>
 
-      {!currentUser && (<Link to="/signup"> 
+      {!currentUser && (
+        <Link to="/signup">
           <button id="homepage-signup-btn">SIGN UP</button>
-        </Link>)
-      }
-      
-      
+        </Link>
+      )}
     </div>
   );
 }
