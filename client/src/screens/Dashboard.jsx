@@ -19,7 +19,7 @@ export default function Dashboard(props) {
       <h1 className="dashboard-titles">View History</h1>
       {historicalWellnessList.map((wellnessRecord) => {
         return (
-          <div key={wellnessRecord.id} className="history-content-section" >
+          <div key={wellnessRecord.id} className="history-content-section">
             <p>
               {Moment(wellnessRecord.createdAt).format("MMMM D, YYYY")}
               <Link to={`/wellness_data/${wellnessRecord.id}/edit`}>

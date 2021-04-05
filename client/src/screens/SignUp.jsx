@@ -29,9 +29,8 @@ export default function SignUp(props) {
           e.preventDefault();
           if (formData.password === formData.confirmPassword) {
             handleSignUp(formData);
-          }
-          else {
-            setErrors('Passwords do not match');
+          } else {
+            setErrors("Passwords do not match");
           }
         }}
       >
@@ -96,7 +95,7 @@ export default function SignUp(props) {
             onChange={handleChange}
           />
         </label>
-        {errors && <div className='pwd-mismatch-msg'>{errors}</div>}
+        {errors && <div className="pwd-mismatch-msg">{errors}</div>}
 
         <br />
         <button id="signup-btn">Sign Up</button>

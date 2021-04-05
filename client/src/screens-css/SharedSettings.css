@@ -1,44 +1,44 @@
-.shared-settings-container{
-  background-color: #F8DCCB;
+.shared-settings-container {
+  background-color: #f8dccb;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#shared-settings-title{
+#shared-settings-title {
   margin: 30px 0px 30px;
 }
 
-.shared-box{
-  background-color: #D1DCE1;
+.shared-box {
+  background-color: #d1dce1;
   width: 800px;
   border-radius: 6px;
   padding: 30px 0px 30px;
   margin-bottom: 50px;
 }
 
-.shared-box-statement{
+.shared-box-statement {
   font-size: 23px;
   text-align: left;
-  margin-left:30px;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.sharing-text{
+.sharing-text {
   font-size: 16px;
 }
 
-.sharing-field{
+.sharing-field {
   margin-left: 20px;
   margin-bottom: 20px;
-  width: 300px
+  width: 300px;
 }
 
-#share-btn{
+#share-btn {
   padding: 10px 60px;
   font-weight: bold;
-  border-radius: 10px; 
+  border-radius: 10px;
   border-style: none;
   background-color: #fda254;
   margin: 20px 0px 60px;
@@ -52,17 +52,17 @@
   transition: 0.2s ease-in-out;
 }
 
-#share-error{
+#share-error {
   color: red;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
-  .shared-box{
+  .shared-box {
     width: 600px;
   }
 
-  .shared-settings-container{
+  .shared-settings-container {
     padding-bottom: 100px;
   }
 
@@ -72,25 +72,25 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .shared-box{
+  .shared-box {
     margin-top: 30px;
     width: 300px;
   }
 
-  #shared-settings-title{
+  #shared-settings-title {
     font-size: 33px;
   }
 
-  .shared-box-statement{
+  .shared-box-statement {
     font-size: 20px;
     text-align: left;
-    margin-left:20px;
+    margin-left: 20px;
     margin-bottom: 50px;
   }
 
-  .sharing-field{
+  .sharing-field {
     margin: 0 auto;
-    width: 250px
+    width: 250px;
   }
 
   #share-btn:hover {

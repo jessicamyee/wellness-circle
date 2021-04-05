@@ -27,10 +27,11 @@ export default function WellDataViewEdit(props) {
   const { id } = useParams();
   const { historicalWellnessList, handleUpdate } = props;
 
-  
   useEffect(() => {
     const prefillFormData = () => {
-      const wellnessRecord = historicalWellnessList.find(wellnessDatum => wellnessDatum.id === Number(id));
+      const wellnessRecord = historicalWellnessList.find(
+        (wellnessDatum) => wellnessDatum.id === Number(id)
+      );
       setFormData(wellnessRecord);
     };
     if (historicalWellnessList.length) {
@@ -45,7 +46,6 @@ export default function WellDataViewEdit(props) {
       [name]: parseInt(value),
     }));
   };
-
 
   return (
     <div className="edit-form-container">
