@@ -61,11 +61,19 @@
   .dashboard-titles{
     font-size: 30px;
   }
+
+  #dashboard-delete-btn:hover {
+    width: 10vw;
+  }
 }
 
 @media only screen and (max-width: 375px) {
   .dashboard-titles{
     font-size: 25px;
     margin-left: 15px;
+  }
+
+  #dashboard-delete-btn:hover {
+    width: 20vw;
   }
 }
