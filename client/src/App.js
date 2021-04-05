@@ -19,7 +19,6 @@ import {
   removeToken,
   verifyUser,
 } from "./services/auth";
-import Nav from "./components/Nav/Nav";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);

@@ -64,3 +64,24 @@
 .guide-title{
   margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 768px) {
+  .create-form {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .create-form {
+    width: 300px;
+  }
+
+  #create-title{
+    font-size: 30px
+  }
+
+  .create-field{
+    margin: 0 auto;
+    width: 260px;
+  }
+}
