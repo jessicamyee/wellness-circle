@@ -141,8 +141,8 @@ src
 | Using Flexbox/GRID Pt 2: Elements resizing and alignment | H | 4hrs| 4hrs | 4hrs |
 | Implementing responsive design Pt 1 | H | 4hrs | 2hrs | 2hrs |
 | Implementing responsive design Pt 2 | H | 4hrs | 0hr | 0hr |
-| Final webapp QA | H | 1hr|  |  |
-| Total | H | 52hrs | 45.5hrs | 45.5hrs |
+| Final webapp QA | H | 1hr| 0.5hr | 0.5hr |
+| Total | H | 52hrs | 46hrs | 46hrs |
 
 
 <br>
@@ -167,8 +167,21 @@ src
 
 ## Code Showcase
 
-Pending
+```rb
+def create
+  params.require(:recipient_username)
+  recipient_username = params[:recipient_username]
+  recipient_user = User.find_by(username: recipient_username)
+  sharer_user = @current_user
+  @user_share = UserShare.new(sharer: sharer_user, recipient: recipient_user)
+  if @user_share.save
+    render json: @user_share.recipient, status: :created
+  else
+    render json: @user_share.errors, status: :unprocessable_entity
+  end
+end
+```
 
 ## Code Issues & Resolutions
 
-Pending
+N/A
