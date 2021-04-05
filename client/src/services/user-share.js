@@ -6,8 +6,10 @@ export const getAllShares = async () => {
 };
 
 export const postShare = async (shareData) => {
-  const resp = await api.post('/user_shares', shareData );
-  return resp.data; 
+  const resp = await api.post('/user_shares', shareData).catch((error) => {
+    return null;
+  });
+  return resp?.data;
 }
 
 export const getListOfShared = async () => {

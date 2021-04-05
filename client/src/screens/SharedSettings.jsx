@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../screens-css/SharedSettings.css";
 
 export default function SharedSettings(props) {
-  const { shareList, handleShareYourSummary } = props;
+  const { shareList, handleShareYourSummary, shareError } = props;
 
   const [formData, setFormData] = useState({
     recipientUsername: "",
@@ -17,7 +17,6 @@ export default function SharedSettings(props) {
       [name]: value,
     }));
   };
-
   return (
     <div className="shared-settings-container">
       <h1 id="shared-settings-title">Your Shared Settings</h1>
@@ -30,7 +29,9 @@ export default function SharedSettings(props) {
         }}
       >
         <div className="shared-box">
-          <h3 className="shared-box-statement">Share your summary with new people</h3>
+          <h3 className="shared-box-statement">
+            Share your summary with new people
+          </h3>
           <label className="sharing-text">
             Person's Username:
             <input
@@ -45,10 +46,13 @@ export default function SharedSettings(props) {
           <div>
             <button id="share-btn">Share</button>
           </div>
+          <div>{shareError}</div>
         </div>
 
         <div className="shared-box">
-          <h3 className="shared-box-statement">You have shared your summary with the following people:</h3>
+          <h3 className="shared-box-statement">
+            You have shared your summary with the following people:
+          </h3>
           {shareList?.map((sharedRecord) => (
             <p key={sharedRecord.id}>
               {sharedRecord.firstName} {sharedRecord.lastName}

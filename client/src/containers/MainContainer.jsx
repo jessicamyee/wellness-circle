@@ -25,6 +25,7 @@ export default function MainContainer(props) {
   const [userAverage, setUserAverage] = useState({});
   const [allShares, setAllShares] = useState([]);
   const [shareList, setShareList] = useState([]);
+  const [shareError, setShareError] = useState(null);
   const history = useHistory();
   const { currentUser } = props;
 
@@ -85,7 +86,13 @@ export default function MainContainer(props) {
 
   const handleShareYourSummary = async (recipientUsername) => {
     const newShareRecord = await postShare(recipientUsername);
-    setShareList((prevState) => [...prevState, newShareRecord]);
+    if (!newShareRecord) {
+      setShareError("User does not exist");
+      return;
+    } else {
+      setShareError(null);
+      setShareList((prevState) => [...prevState, newShareRecord]);
+    }
   };
 
   return (
@@ -111,6 +118,7 @@ export default function MainContainer(props) {
         <SharedSettings
           shareList={shareList}
           handleShareYourSummary={handleShareYourSummary}
+          shareError={shareError}
         />
       </Route>
       <Route path="/user_shares">
