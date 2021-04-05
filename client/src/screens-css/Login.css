@@ -1,33 +1,33 @@
-.login-form-container{
+.login-form-container {
   min-height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F8DCCB;
+  background-color: #f8dccb;
 }
 
 .login-form {
   width: 600px;
-  background-color: #D1DCE1;
+  background-color: #d1dce1;
 }
 
-#login-title{
+#login-title {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 40px
+  font-size: 40px;
 }
 
-.login-text{
+.login-text {
   font-size: 16px;
 }
 
-.login-field{
+.login-field {
   margin-left: 20px;
   margin-bottom: 20px;
-  width: 300px
+  width: 300px;
 }
 
-#login-btn{
+#login-btn {
   padding: 5px 60px;
   font-weight: bold;
   margin: 20px 0px 35px;
@@ -44,7 +44,41 @@
   transition: 0.2s ease-in-out;
 }
 
-#redirect-signup-from-login{
+#redirect-signup-from-login {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-toggler {
+    margin-right: 40px;
+  }
+
+  .login-form-container {
+    padding-bottom: 100px;
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .login-form {
+    width: 320px;
+  }
+
+  .login-field {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 270px;
+  }
+
+  .person-footer {
+    margin: 30px 20px;
+  }
 }
