@@ -1,11 +1,12 @@
-import axios from 'axios';
+import axios from "axios";
 
-
-
-const baseUrl = process.env.NODE_ENV === 'production' ? 'https://wellness-circle-api.herokuapp.com' : 'http://localhost:3000';
+const baseUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://wellness-circle-api.herokuapp.com"
+    : "http://localhost:3000";
 
 const api = axios.create({
-  baseURL: baseUrl
+  baseURL: baseUrl,
 });
 
 export default api;
