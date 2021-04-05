@@ -125,7 +125,7 @@ export default function MainContainer(props) {
         <InnerCircle allShares={allShares} />
       </Route>
       <Route path="/">
-        <Home currentUser={currentUser}/>
+        <Home currentUser={currentUser} />
       </Route>
     </Switch>
   );
