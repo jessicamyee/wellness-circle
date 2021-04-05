@@ -57,3 +57,15 @@
   padding-bottom: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .dashboard-titles{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .dashboard-titles{
+    font-size: 25px;
+    margin-left: 15px;
+  }
+}
