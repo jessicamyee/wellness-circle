@@ -63,18 +63,18 @@ The user can also optionally share their summary data with their “inner circle
 #### Wireframes
 
 [See here](https://www.figma.com/file/Nxf7VtYomX3qQcvFyoSH9I/Wellness-Circle-Wireframes?node-id=0%3A1) for an Interactive Prototype & Mobile Views.
-![Homepage Public and Authenticated View](https://i.imgur.com/xS7K3Tq.png)
-![Log In and Sign Up](https://i.imgur.com/IjF3j5a.png)
-![Dashboard and Add Record](https://i.imgur.com/i0eCW4e.png)
-![View/Edit Data](https://i.imgur.com/kiMXsq4.png)
-![Inner Circle and Shared Screens](https://i.imgur.com/hElxSBH.png)
-![Mobile View Pt. 1](https://i.imgur.com/vbxJNHi.png)
-![Mobile View Pt. 2](https://i.imgur.com/lNj9Gsj.png)
+![Homepage Public and Authenticated View](https://i.imgur.com/cMRwutc.png)
+![Log In and Sign Up](https://i.imgur.com/DyWqSSe.png)
+![Dashboard and Add Record](https://i.imgur.com/QwumlrW.png)
+![View/Edit Data](https://i.imgur.com/DyYUhvx.png)
+![Inner Circle and Shared Screens](https://i.imgur.com/onp42hi.png)
+![Mobile View Pt. 1](https://i.imgur.com/9wcVtbu.png)
+![Mobile View Pt. 2](https://i.imgur.com/fxC3wZd.png)
 
 
 
 #### Component Tree
-![Wellness Circle Component Tree](https://i.imgur.com/FesxnkI.png)
+![Wellness Circle Component Tree](https://i.imgur.com/Ca8OSye.png)
 [See here](https://whimsical.com/wellness-circle-component-tree-XM9U4Gu5gM9gS4BrVvbS5H) for a closer view of the Component Tree.
 
 #### Component Architecture
@@ -84,10 +84,8 @@ The user can also optionally share their summary data with their “inner circle
 src
 |__ components/
       |__ Modal.jsx
-      |__ ProcessCard.jsx
       |__ SummaryRow.jsx
         |__ DataCircle.jsx
-      |__ HistoryRow.jsx
       |__ Navbar.jsx
       |__ Footer.jsx
 |__ containers/
@@ -98,7 +96,6 @@ src
       |__ Home.jsx
       |__ SignUp.jsx
       |__ Login.jsx
-      |__ SignOut.jsx
       |__ Dashboard.jsx
       |__ WellDataCreate.jsx
       |__ WellDataEdit.jsx
@@ -167,6 +164,8 @@ src
 
 ## Code Showcase
 
+Located in my user_shares_controller.rb. This was used to create a new recipient for when a user decides to share their summary data with another existing user.
+
 ```rb
 def create
   params.require(:recipient_username)
@@ -183,5 +182,4 @@ end
 ```
 
 ## Code Issues & Resolutions
-
 N/A
