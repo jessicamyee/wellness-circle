@@ -180,6 +180,3 @@ def create
   end
 end
 ```
-
-## Code Issues & Resolutions
-N/A
