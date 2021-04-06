@@ -19,7 +19,7 @@
 
 ## Overview
 
-Deployed Link: Pending
+[Deployed Link](https://wellness-circle.netlify.app/)
 
 **Wellness Circle** is a personal wellness tracker where a user signs up for an account and can start tracking their daily wellness for 6 wellness categories. The user will be able to see weekly summaries of their wellness based on the data they inputted.
 
