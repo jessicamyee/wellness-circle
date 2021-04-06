@@ -71,6 +71,18 @@
   }
 }
 
+@media only screen and (max-width: 632px) {
+  .create-form {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  .create-form {
+    width: 350px;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .create-form {
     width: 300px;

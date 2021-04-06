@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 200px;
 }
 
 #shared-settings-title {
@@ -68,6 +69,18 @@
 
   #share-btn:hover {
     width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 636px) {
+  .shared-box {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 467px) {
+  .shared-box {
+    width: 400px;
   }
 }
 
